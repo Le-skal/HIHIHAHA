@@ -670,7 +670,7 @@ input:checked+.sliderSml {
     bottom: -48px;
     width: 420px;
     height: 420px;
-    background-image: url(https://media.discordapp.net/attachments/785234774427959349/818707568758882325/YUKI_BITCH_JPEG3.png);
+    background-image: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/YUKI_BITCH_JPEG3.png?raw=true);
     background-size: 420px;
     background-repeat: no-repeat;
     z-index: 1;
@@ -689,7 +689,7 @@ input:checked+.sliderSml {
     height: 420px;
     background-color: var(--accent);
     pointer-events: none;
-    -webkit-mask-image: url(https://media.discordapp.net/attachments/785234774427959349/818707568758882325/YUKI_BITCH_JPEG3.png);
+    -webkit-mask-image: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/YUKI_BITCH_JPEG3.png?raw=true);
     -webkit-mask-size: 420px;
     -webkit-mask-position: center top;
     opacity: var(--menu-decal);
@@ -1635,7 +1635,7 @@ input[type=color] {
 
 #bottomLeftHolder::before {
     content: " ";
-    background: url(https://media.discordapp.net/attachments/785234774427959349/818944416994558052/yuki_bitch1.png);
+    background: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/yuki_bitch1.png?raw=true);
     background-size: 640px;
     background-position-x: center;
     background-position-y: top;
