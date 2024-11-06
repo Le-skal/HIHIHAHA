@@ -1,0 +1,516 @@
+:root {
+	--name: "PLURAVP"; /* Change your Username */
+	
+	--div-grey: rgb(255 255 255 / 0%);
+    --div-black: rgb(255 255 255 / 0%);
+}
+		/* Timer */
+
+#timerVal {
+	text-shadow:none;
+}
+
+#timerDisplay {
+    background-color: none;
+    text-align: left;
+    z-index: 3;
+    padding: 10px;
+}
+
+#timerVal {
+    color: #fff;
+    padding-left: 3px;
+    font-size: 32px;
+    will-change: transform;
+    transform: translateZ(0)
+}
+
+#timerIcon {
+    display: none;
+}
+
+#timerHolder {
+    text-align: left;
+    z-index: 3;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    will-change: transform;
+    transform: translateZ(0);
+    border-radius: 6px;
+    vertical-align: top;
+}
+#timerInner.topLeftOld {
+    background-color: #ffffff00;
+}
+		/* Random changes */
+
+#ingameFPS {
+	color: white !important;
+	visibility: visible;
+}
+
+#weapDisplay {
+    right: 20px;
+    bottom: 5px;
+}
+
+.weapKey {
+    color: #ffffff70 !important;
+}
+
+#pingText {
+	color: white !important;
+}
+
+#pingDisplay .material-icons {
+	font-size: 30px;
+}
+
+/* game info thing */
+
+#matchInfo.topLeftOld {
+    display: flex !important;
+    visibility: hidden !important;
+}
+#matchInfo.topLeftOld::before {
+    visibility: visible;
+    content: 'Agony';
+    color: #ff2a2a91;
+    Font-size: 20px
+}
+
+		/* Chat */
+
+#chatInputHolder {
+background-color: rgb(0 0 0 / 40%);
+}
+
+#chatList {
+    background-color: rgb(0 0 0 / 0%); 
+}
+
+/* Health */
+
+#bottomLeftHealth {
+	display: inline-block;
+	text-shadow: 7px 7px 3px rgba(30, 30, 30, .5);
+	position: fixed;
+	font-size: 75px;
+	right: calc(50% + 120px);
+	left: 34%;
+	bottom: 30px;
+	color: white;
+	font-family: gamefont;
+	letter-spacing: 2px;
+}
+
+.nHealthBarSeg {
+	background-color: transparent;
+    width: -webkit-fill-available;
+    height: 35px;
+    margin-right: -4px;
+}	
+.nHealthBarSeg:first-child .nHpBSeg{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.nHealthBarSeg:last-child .nHpBSeg {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.nHpBSeg {
+    width: 100%;
+    border-radius: 0px
+}
+
+#healthValueHolder {
+	background-color: transparent;
+	position: fixed;
+	left: 30%;
+	bottom: 25%;
+	align-items: center;
+}
+
+
+
+/* Ammo */
+#ammoHolder {
+	position: fixed;
+	background-color: transparent;
+	background-image:linear-gradient(to right,white,white);
+	transform: unset;
+	width: 50px;
+	height: 4px;
+	top: calc(50% + 35px);
+	left: calc(50% - 25px);
+	padding: 0;
+	padding-top: 0;
+	padding-left: 0;
+	border-radius: 0;
+}
+
+#ammoVal {
+	display: inline-block;
+	text-shadow: 7px 7px 3px rgba(30, 30, 30, .5);
+	position: fixed;
+	font-size: 75px;
+	left: calc(50% + 120px);
+	right: 30%;
+	bottom: 30px;
+	color: white;
+	font-family: gamefont;
+	letter-spacing: 2px;
+}
+
+#ammoMax {
+	display: none;
+}
+
+#ammoIcon {
+	display: none !important;
+}
+
+	/* Reload prompt */
+
+#reloadMsg {
+	bottom: calc(30% - 200px);
+	background-color: transparent !important;
+	border: none;
+	color: red;
+	font-size: 0;
+}
+
+#reloadMsg::before {
+	content: '! 自闭症患者 !';
+	position: center;
+	align-items: center;
+	font-size: 26px;
+}
+
+	/* Buttons */
+
+.buttonB,.buttonPI,.buttonR,.buttonP,.buttonO,.buttonG {
+    border: 4px solid #ffffff00!important
+}
+	/* Name changer */
+	
+.leaderNameM:before {
+    content: var(--name) !important;
+    font-size:18px !important;
+    visibility: visible !important;
+    color:White !important;
+}
+#menuAccountUsername{ font-size: 0px; }
+#menuAccountUsername::before {
+    content: var(--name) !important;
+    font-size: 16px;
+}
+
+.menuClassPlayerName{ font-size: 0px; }
+.menuClassPlayerName::before {
+    content: var(--name) !important;
+    font-size: 19px;
+}
+.leaderNameM span:after {
+    visibility:visible !important;
+    content: var(--clan) !important;
+    font-size:18px !important;
+    color: var(--color2);
+}
+
+.leaderNameM,.leaderNameM span {
+    font-size:0px !important;
+    visibility:hidden;
+}
+a.floatR {
+    font-size: 0px
+}
+.endTableN[href="./social.html?p=profile&q=fatpenis] {
+	font-size: 0px !important;
+	visibility: hidden;
+}
+.endTableN[href="./social.html?p=profile&q=fatpenis"]::after, a.floatR::after {
+	visibility: visible !important;
+	content: var(--name) !important;
+	font-size: 23px !important;
+	color: var(--color);
+}		
+
+/* Removeables */
+
+#mainLogoFace,
+#mainLogo,
+#aMerger,
+#newsHolder,
+#youNewDiv,
+#termsInfo,
+.menuSocialB,
+.voteHint,
+#androidDB,
+#iosDB,
+#steamDB,
+#hubBox,
+#menuClassName,
+#menuClassSubtext,
+#recTimer,
+#faceItIconM,
+#endAContainer,
+#onetrust-consent-sdk,
+#aHolder,
+.imageButton,
+#editorBtnM,
+#rankedSoonTm,
+.headerBarRight .verticalSeparator,
+#seasonLabel,
+#gameNameHolder,
+.youNewDiv,
+.krSocial,
+#mailCount,
+#voiceDisplay,
+#bubbleContainer,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+.setSugBox,
+.lC-cube,
+#streamContainer,
+#ammoMax,
+.weapKey,
+#ammoIcon,
+#bottomLeftChallIcon,
+#instructions,
+#maxHP,
+#timerIcon,
+#policeButton,
+#chatList::-webkit-scrollbar,
+#uiBase.onMenu #specTeam0,
+#uiBase.onMenu #spec0,
+#uiBase.onMenu #spec1,
+#uiBase.onMenu #specNames,
+#uiBase.onMenu #specStats,
+#uiBase.onMenu #specContr,
+#uiBase.onMenu #specKPDContr,
+#uiBase.onMenu #specSus,
+#uiBase.onMenu #specTeam1,
+#uiBase.onMenu #specGMessage,
+#uiBase.onMenu #specGameInfo,
+#loadEditrBtn,
+#mapInfoHld,
+.headerBarRight,
+#classPreviewCanvas,
+i#voiceIcon,
+#specControlHolder,
+#miniMapOverlay {
+display: none !important;
+}
+
+/* Edits */
+
+#PC7WaterMark1, #matchInfo {
+    display: none;
+}
+#menuItemContainer {
+    background: none;
+}
+#topRightAdHolder {
+    background: none;
+}
+#streamContainer {
+    background: none;
+}
+#customizeButton {
+    background: none;
+}
+div#signedInHeaderBar.headerBarLeft.headerBar {
+    background: none;
+}
+div#mLevelCont {
+    background: none;
+}
+.centerLeaderContainer {
+    background-color: none;
+}
+
+.centerLeaderContainerInner {
+    background-color: none;
+}
+#leaderboardHolder {
+    text-align: left;
+    float: right;
+    width: 350px;
+    z-index: 3;
+    color: rgba(255,255,255,.7);
+    font-size: 23px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: rgb(0 0 0 / 0%);
+}
+
+#leaderContainer {
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 3px;
+    background-color: rgb(0 0 0 / 0%);
+}
+#chatList {
+    background-color: rgb(0 0 0 / 0%); 
+}
+.iconProfile { 
+	background-image: CSSIMAGE:profile; 
+}
+.settingsHeader,#settingsTabLayout {
+    background-color: #00daff42;
+}
+#menuWindow.dark {
+    background-color: #ff000000;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.5)
+}
+.menuItem .menuItemTitle {
+    color: #fff0
+}
+span.material-icons-outlined.menBtnIcn {
+    color: green;
+}
+.buttonB,.buttonPI,.buttonR,.buttonP,.buttonO,.buttonG {
+    border: 4px solid #ffffff00!important
+}
+.greyInner, .greyInlineInner {
+    background-color: rgb(108 108 108 / 0%);
+   
+}
+.leaderCounter {
+    display: none;
+}
+.statIcon {
+    background: #ffffff00;
+}
+.greyInner, .greyInlineInner {
+    background-color: rgb(108 108 108 / 0%);
+   
+}
+#minimapOverlay {
+display: none;
+}
+
+.weapItem {
+background-color: rgb(255 255 255 / 0%);
+margin-bottom: -10px;
+border-radius: 0px;
+}
+
+#weapItem_2 {
+margin-top: -17px;
+}
+
+.weapIcon {
+width: 120px;
+height: 60px;
+}
+
+.weapSkin {
+background-color: rgb(255 255 255 / 0%);
+font-size: 0px;
+}
+
+.weapKey {
+background-color: rgb(255 255 255 / 0%);
+font-size: 0px;
+}
+
+.debugInfo {
+display: inline-block;
+vertical-align: top;
+text-align: right;
+margin-top: 7px;
+}
+#hudClassImg {
+content: url("https://cdn.discordapp.com/attachments/983809820979261451/1068596369155182692/New_Project_5.png")!important;
+}
+
+#pingText {
+    font-size: 0px;
+color : #FF00FF !important;
+}
+#pingText:before {
+    font-size: 18px;
+color : #FF00FF !important;
+    animation: ping 18s linear;
+    content: "18"
+}
+#pingIcon {
+    color: Magenta !important;
+}
+#curGameInfo {
+    display: flex !important;
+    visibility: hidden !important;
+}
+#curGameInfo::before {
+    visibility: visible;
+    content: 'delúsion';
+    color: purple;
+}
+
+@keyframes ping {
+		100%,0%{
+			content: "18"
+color : #FF00FF !important;
+		}
+		20%{
+			content: "18"
+color : #FF00FF !important;
+		}
+        46%{
+            content: "18"
+color : #FF00FF !important;
+        }
+        83%{
+            content: "18"
+color : #FF00FF !important;
+        }
+		91%{
+			content: "18"
+color : #FF00FF !important;
+		}
+}
+
+.leaderNameM::before {
+    font-family : 'Material Icons';
+    font-weight : normal;
+    font-style : normal;
+    font-size : 23.8px;;
+    letter-spacing : normal;
+    text-transform : none;
+    display : inline-block;
+    white-space : nowrap;
+    overflow-wrap : normal;
+    direction : ltr;
+    content : "check_circle " !important;
+    color : #40C4FF !important;
+    vertical-align : baseline;
+    margin-right : 3px;
+    margin-left : -4px;
+}
+.leaderNameM,.leaderNameM span {
+    font-size:0px !important;
+
+}
+.leaderNameM:after {
+    visibility:visible;
+    content:'PLURAVP';
+    font-size:18px !important;
+    color:Purple !important;
+}#profilePicM {
+    border: 4px solid #9a9a9a00;
+    background-image: url("https://cdn.discordapp.com/attachments/711427846719012874/1194010585365495908/20240107_233411.jpg?ex=65aecc03&is=659c5703&hm=41f5bd1d4a4e6fafeec2cf567a3b98d11f37cda8517bdd32af52b8f4597aaca7&");
+    background-size: cover;
+    z-index: auto !important;
+}

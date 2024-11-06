@@ -1,0 +1,731 @@
+@import url(https://envyxyz.github.io/removal/removal.css);
+
+:root {
+    --accent-color: #ffffff;
+  --div-grey: rgb(0 0 0 / 0%);
+  --div-black: rgb(59 58 58 / 0%);
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/inter/v2/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2);
+}
+
+.button {
+    background-color: transparent !important;
+}
+
+#subLogoButtons {
+    bottom: 90px;
+}
+
+.button, .button:hover { 
+    border: hidden ! important;
+}
+
+#mLevelCont,
+   .headerBarLeft,
+   .headerBarRight {
+   background-color: transparent;
+}
+
+#menuAccountUsername {
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+.progressBar {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.progressBarInner {
+    background-image: linear-gradient(to right,white, lightgrey);
+    transition: width 1s ease-in-out;
+    border-radius: 0px
+}
+
+.material-icons-outlined,
+span.material-symbols-outlined.menBtnIcn {
+    color: #fff !important
+}
+
+#menuItemContainer {
+    background: transparent
+}
+
+.menuItem .menuItemTitle {
+    font-size: 18px !important;
+}
+
+#menuClassContainer {
+    top: unset;
+}
+
+#menuClassContainer:hover #classPreviewCanvas {
+    transform: unset !important;
+}
+
+#classPreviewCanvas {
+    transform: translateY(5000000px);
+    margin-bottom: -135px;
+    margin-right: -113px;
+}
+
+.bigShadowT {
+    text-shadow: none !important
+}
+
+#instructions {
+    animation: none
+}
+
+#uiBase.onMenu #gameUI{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
+}
+
+/* login */
+#referralHeader {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,0,0,0.3);padding-top:10px;padding-bottom:20px;"] {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+#accName {
+    border-radius: 20px;
+}
+
+#accPass {
+    border-radius: 20px;
+}
+
+#accEmail {
+    border-radius: 20px;
+}
+
+/* join button */
+.joinBtn {
+    background-color: rgba(0,0,0,.16);
+    border-radius: 10px
+}
+
+.joinBtn:hover {
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+    transition: 300ms ease;
+}
+
+#gameURL {
+    border-radius: 10px
+}
+
+/* selector */
+#selectorContainer {
+    background-color: transparent;
+}
+
+/* server finder */
+.serverHeader {
+    background-color: transparent
+}
+
+.setHed {
+    border-radius: 30px;
+    background-color: rgba(0,0,0,.3);
+}
+
+.setBodH {
+    background-color: rgba(0,0,0,.0)
+}
+
+.setHed:hover {
+    backdrop-filter: blur(100px);
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+    transition: 300ms ease;
+}
+
+.tabANew {
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+}
+
+.dark .tabANew {
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+}
+
+.purejscarousel-btn {
+    background-color: rgb(0 0 0/40%)!important;
+}
+
+.slide {
+    display:none;
+}
+
+#hostMenuBtn {
+    display:none;
+}
+
+#serverSearch {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+.slider2 {
+    background-color: rgba(0,0,0,.16);
+}
+
+input:checked+.slider2 {
+    background-color: #2196f380
+}
+/* host */
+.hostHeader {
+    border-bottom: none;
+    background-color: rgba(0,0,0,.2);
+    box-shadow: none;
+}
+
+.mapListCat {
+    border-radius: 10px;
+}
+
+#stickyHostH {
+    background-color: rgba(0,0,0,.4);
+    border-top: none;
+    box-shadow: none;
+}
+
+.bigMenTabs {
+    background-color: rgba(0,0,0,.0);
+}
+
+.bigMenTab {
+    border-radius: 20px;
+    background-color: rgba(0,0,0,.4);
+}
+
+.bigMenTab:hover {
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+    transition: 300ms ease;
+    border-bottom: none;
+}
+
+
+.bigMenTabA {
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+    transition: 300ms ease;
+    border-bottom: none;
+}
+
+
+
+/* setting */
+.settingsHeader {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.settingTab {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+    border-bottom: none;
+}
+
+.tabANew {
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+    transition: 300ms ease;
+    border-bottom: none;
+}
+
+.tabANew:hover {
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+    transition: 300ms ease;
+    border-bottom: none;
+}
+
+
+.settingTab:hover {
+    border-radius: 30px 10px;
+    background-color: rgba(0,0,0,.4);
+    transition: 300ms ease;
+    border-bottom: none;
+}
+
+#settingsTabLayout {
+    background-color: transparent;
+}
+
+/* end card */
+.endCard {
+    background-color: rgba(0,0,0,.0);
+}
+
+#tabHolder {
+    background-color: rgba(0,0,0,.0);
+}
+
+.endSection {
+    background-color: rgba(0,0,0,.0);
+}
+
+#endTable {
+    background-color: rgba(0,0,0,.0);
+}
+
+#endUI {
+    backdrop-filter: blur(40px);
+}
+
+.gfSection {
+    background-color: rgba(0,0,0,.0);
+}
+
+ /* health bar */
+
+#bottomLeftHealthBar {
+    width: 200px;
+    position: fixed;
+    left: 3%;
+    bottom: 25px;
+    display: none;
+}
+
+.nHealthBarSeg {
+    display: flex;
+    height: 21px;
+    width: -webkit-fill-available;
+    margin: 0 -20.88px;
+    background:transparent;
+    display: none;
+}
+
+.nHpBSeg {
+    border-radius: 1;
+}
+
+    /* Health display */
+#bottomLeftHealth {
+    position: fixed;
+    color: #fff;
+    font-size: 75px;
+    will-change: transform;
+    left: 35%;
+}
+
+#ammoVal {
+    font-size: 75px;
+    position: fixed;
+    color: #fff;
+    bottom: 22px;
+    will-change: transform;
+    right: 35%;
+}
+
+#timerHolder {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+}
+
+#timerVal {
+    font-size: 30px;
+    padding-left: 0;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#killsVal,#deathsVal,#streakVal,#myScoreVal,#kdVal {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#fpsDisplay, #fpsDisplay>span {
+    padding-left: 3px;
+    padding-top: 50px
+}
+
+
+#ingameFPS,#menuFPSDisplay,
+#menuPingText,#menuPingDisplay .material-icons,
+#pingDisplay,#fpsDisplay,#ingressDisplay,#egressDisplay,#tickDisplay,
+#pingText,#ingressPacketCount,#ingressDataSize,#egressPacketCount,#egressDataSize,#tickPacketCount {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#instructionHolder {
+    background-color: rgba(0,0,0,.0);
+    backdrop-filter: blur(40px);
+}
+
+
+/* instructions (when disconnected) */
+#instructionsUpdate {
+    display: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.instructionsHeader {
+    display:none;
+}
+
+.instructionsTabs {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.instructionsTab {
+    opacity: 100%;
+    border-top: none;
+}
+
+
+/* menu */
+.menuItem .menuItemTitle {
+    display: none;
+    visibility:hidden;
+}
+
+#chatInput {
+  font-size: 18px;
+  background-color: rgba(0,0,0,0);
+  border: 0px solid rgba(0,0,0,0);
+  border-radius: 0px
+}
+
+#chatSwitch {
+  margin-bottom: -3px;
+}
+
+#chatList {
+  background-color: transparent
+}
+
+#chatList::-webkit-scrollbar {
+    width: 6px;
+    display: none;
+}
+
+.chatItem {
+    font-size: 18px;
+    padding-right: 5px;
+    max-width: 265px;
+}
+
+.chatItem span[style="color:#fc03ec"] {
+    color: hotpink !important;
+}
+
+.menuClassPlayerName{
+    animation: rainbow .5s linear infinite;
+}
+
+.menuClassPlayerClan {
+    display: none;
+}
+
+.leaderNameM{
+    content: "a6a6";
+    animation: rainbow .5s linear infinite;
+}
+
+.leaderNameM span {
+    display: none;
+}
+
+.endTableN[style="color:#fff"] {
+    content: "a6a6";
+    animation: rainbow .5s linear infinite;
+}
+
+#weapHolder {
+    position:absolute;
+    z-index:1;
+    right: 47%;
+    bottom:7%;
+    row-gap:5px;
+    
+}
+
+.weapItem {
+    position:absolute;
+    text-align:right;
+    color:#fff;
+    border-radius:4px;
+    transition: all 0.25s;
+    bottom: 50%;
+  right: 0px;
+    height: 0;
+    opacity: 0 !important;
+  }
+  
+  .weapItem[style*="1"] {
+      opacity: 1 !important;
+      height: 30px;
+  }
+  
+  .weapItemInner {
+    margin:0px;
+    padding:0px;
+    display:inline-block;
+  }
+
+  .weapKey {
+    display:none
+  }
+  .weapSkin {
+    display:none;
+  }
+
+  .weapIcon {
+    width: 240px;
+    height: 120px;
+    top: 50%;
+}
+
+.weapItem {
+  margin-right: 0 !important;
+  transition-duration: 0.5s;
+  filter: drop-shadow(3px 3px #000);
+  }
+
+#ammoHolder {
+    position: fixed;
+	background-color: transparent;
+	background-image: url(https://dummyimage.com/1x1/ffffff/ffffff.png);
+	transform: none;
+	width: 50px;
+	height: 4px;
+	top: calc(50% + 35px);
+	left: calc(50% - 25px);
+	padding: 0;
+	padding-top: 0;
+	padding-left: 0;
+	border-radius: 0;
+      border-radius:4px;
+  display:inline-block;
+  font-size:29px;
+  letter-spacing:-2px;
+  border-radius:6px;
+  background-repeat:no-repeat;
+  background-size:0% 100%;
+}
+
+#reloadMsg {
+	bottom: 100px;
+	background: transparent !important;
+}
+
+.topRightCounters {
+  position: unset;
+  bottom: unset;
+  right: unset;
+}
+
+#deathsVal,
+#killsVal,
+#livesDisp,
+#streakVal,
+#myScoreVal,
+#kdrVal {
+    color: white !important;
+    bottom: 7px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#deathsVal::after,
+#killsVal::after,
+#streakVal::after,
+#myScoreVal::after,
+#livesDisp::after,
+#kdrVal::after {
+    display: flex;
+    position: fixed;
+    margin-top: 45px;
+    font-size: 14px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#deathsVal::after {
+    content: 'Deaths';
+}
+
+#killsVal::after {
+    content: 'Kills';
+}
+
+#streakVal::after {
+    content: 'Streak';
+}
+
+#myScoreVal::after {
+    content: 'Score';
+}
+
+#livesDisp::after {
+    content: 'Lives';
+}
+
+#kdrVal::after {
+    content: 'K/D';
+}
+
+#killsIcon,
+#deathsIcon,
+#streakIcon,
+#scoreCount .material-icons,
+#livesCount .material-icons {
+    display: none;
+}
+#streakCount {
+    position:fixed;
+    transform:translateX(-50%);
+    top:85%;
+    left:49.4%;
+    background-color:transparent;
+}
+#killCount {
+    position:fixed;
+    transform:translateX(-50%);
+    top:85%;
+    left:44.4%;
+    background-color:transparent;
+}
+#deathCount {
+    position:fixed;
+    transform:translateX(-50%);
+    top:85%;
+    left:54.4%;
+    background-color:transparent;
+}
+
+/* server host */
+#menuWindow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+
+.serverHostOpH   {
+    display: none;
+}
+
+#windowHolder.popupWin {
+    background-color: rgba(0,0,0,.0);
+    backdrop-filter: blur(10px);
+}
+
+#menuWindow.dark {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+
+/* comp */
+#compClassPHolder {
+    background-color: rgba(0,0,0,.0);
+}
+
+#compBtnLst {
+    background-color: rgba(0,0,0,.0);
+}
+
+.compTScrB {
+    background: rgba(0,0,0,.0);
+}
+
+#compTScrB {
+    background: rgba(0,0,0,.0);
+    display: none;
+}
+
+#mainlogo,
+#bottomLeftClassImg, 
+#bottomLeftTeamHolder,
+#voiceIcon,
+#recTimer, 
+#bottomLeftChallIcon,
+.weapKey,
+.weapStreakHolder, 
+#ammoMax,
+#ammoIcon,
+#matchInfo,
+#miniMapOverlay, 
+.youNewDiv,
+#updateAdIcon,
+#helpTxtHol,
+#helpTxtHol:hover,
+#newsHolder,
+#timerIcon,
+#aHolder,
+.endAHolder,
+#streamContainer,
+#topRightAdHolder, 
+#merchImg,
+#ot-sdk-btn-floating.ot-floating-button,
+#seasonLabel,
+#termsInfo,
+#streamContainer,
+#mapInfoHld,
+#curGameInfo,
+#mainLogoFace,
+#termsInfo, 
+#aMerger,
+#rankedSoonTm,
+#newsHolder,
+#youNewDiv,
+#onetrust-consent-sdk,
+.weapKey,
+#aHolder,
+.imageButton,
+#editorBtnM,
+.headerBarRight .verticalSeparator,
+.verticalSeparatorInline,
+#seasonLabel,
+.krSocial,
+#mailCount,
+#voiceDisplay,
+#bubbleContainer,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+#loadEditrBtn,
+.settingsBtn[onclick="openOneTrust()"],
+.menuSocialB,
+#menuLevelIcon,
+#menuMiniProfilePic,
+.menuClassPlayerVirus,
+#menuClassSubtext,
+#menuClassName,
+#menuClassIcn,
+#customizeButton .material-icons,
+#policeButton,
+.krSocial,
+.imageButton,
+#editorBtnM,
+#mainLogo {
+    display: none !important;
+}

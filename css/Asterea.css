@@ -1,0 +1,787 @@
+/* NEVER TOUCH THIS STUFFS | IF YOU WANT TO CHANGE THE COLOR, CHANGE --main-color: #colorcode */
+
+@font-face {
+    font-family:gamefont;
+    src:url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2);
+}
+
+:root{
+
+    --waterMark:"";
+    --mainLogo: url(https://cdn.discordapp.com/attachments/950183530955169863/1253680958503256145/Panda_Hello.png?ex=6676bce0&is=66756b60&hm=12e3bf4701a522b6d80980d8153964ccd7356476f11588036917add9c022198d&);
+    --main-color: #000000;
+    --hover-color: #FFF3D7;
+    --black: #292929;
+    --white: #FDFFFC;
+    --uiscale: .8;
+    --div-grey: rgb(255 255 255 / 0%);
+    --div-black: rgb(255 255 255 / 0%);
+}
+
+
+#uiBase {
+    height: calc(100%/var(--uiscale)) !important;
+    width: calc(100%/var(--uiscale)) !important;
+    transform: scale(var(--uiscale)) !important;
+}
+
+#signedInHeaderBar{
+    background-color: transparent;
+}
+
+#mLevelCont{
+background-color: transparent;
+}
+
+/* MAIN LOGO */
+#mainLogo {
+    position: fixed;
+    top: 100px;
+    content: var(--mainLogo);
+}
+
+
+#gameNameHolder {
+    pointer-events: all;
+    font-size: 0;
+    color: transparent;
+    transition: 0.5s;
+}
+
+#gameNameHolder:hover {
+    font-size: 30px;
+    color: #fff;
+}
+#gameNameHolder::after {
+    position: fixed;
+    top: 400px;
+    text-align: center;
+    content: "css by Skal#3528";
+    display: block;
+    font-family: 'ISOCP';
+}
+
+
+/* DO NOT DISPLAY */
+#newsHolder, #headerRight, .compPlWepsL, #compTimBox, #tlInfHold, #rankedSoonTm, #seasonLabel, #voiceDisplay, #cmpStatBarH, #termsInfo, #menuLevelBar, #menuLvlHold, 
+#faceItIconM, .menuItemTitle, #topRightAdHolder, #streamContainer, #cmpDatBox, #cmpPartnerImg, .weapKey, #igXPBar, #mainLogoFace, #ammoMax, #menuWindow::-webkit-scrollbar, #chatList::-webkit-scrollbar, #ammoIcon, #hudClassIcon, #maxHP, #timerIcon, #challIcon{
+    display: none !important;
+}
+
+#bottomLeftChallIcon {
+    display: none;
+  }
+
+  #bottomLeftClassImg {
+    display: none;
+    background-color: transparent;
+  }
+
+#bottomLeftPlayer {
+    background-color: transparent;
+}
+#bottomLeftPlayerLeft {
+    background-color: transparent;
+}
+#bottomLeftPlayerMid {
+    position: fixed;
+    bottom: 5%;
+    left:1%;
+  }
+
+#bottomLeftTeamType{
+    display: none
+}
+#bottomLeftTeamName {
+    display: none;
+}
+
+#bottomLeftPlayerRight {
+    background-color: rgb(108 108 108 / 0%);
+}
+
+.greyInner, .greyInlineInner, .greyInlineInnerMid {
+    background-color:transparent;
+}
+
+.button,
+.button:hover{
+	border: hidden!important
+}
+
+#igXPBar {
+	visibility: hidden;
+}
+.voiceOff:after {
+    display: none !important;
+  }
+  #recTimer {
+    display: none !important;
+  }
+
+
+/* CENTER MENU BUTTONS */
+#menuBtnHost, #menuBtnBrowser, #menuBtnRanked, #inviteButton, #menuBtnJoin, #customizeButton, #policeButton {
+    background: var(--main-color);
+}
+/* CLASS PICKER */
+#aHolder,
+#onetrust-consent-sdk {
+    display: none !important;
+}
+
+#hiddenClasses {
+    display       : flex !important;
+    flex-direction: row;
+    position      : fixed;
+    left          : 56%;    
+    top           : 10px;
+    bottom        : unset;
+    transform     : translateX(-50%);
+    margin-right  : 10px;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_0.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker0[onclick="selectClass(0)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker1[onclick="selectClass(1)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_1.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker1[onclick="selectClass(1)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker2[onclick="selectClass(2)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_2.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker2[onclick="selectClass(2)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker3[onclick="selectClass(3)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_3.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker3[onclick="selectClass(3)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker4[onclick="selectClass(4)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_4.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker4[onclick="selectClass(4)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker5[onclick="selectClass(5)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_5.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker5[onclick="selectClass(5)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker6[onclick="selectClass(6)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_6.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker6[onclick="selectClass(6)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker7[onclick="selectClass(7)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_7.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker7[onclick="selectClass(7)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker8[onclick="selectClass(8)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_8.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker8[onclick="selectClass(8)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker9[onclick="selectClass(9)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_9.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker9[onclick="selectClass(9)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker10[onclick="selectClass(10)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_10.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker10[onclick="selectClass(10)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker11[onclick="selectClass(11)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_11.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker11[onclick="selectClass(11)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker12[onclick="selectClass(12)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_12.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker12[onclick="selectClass(12)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker13[onclick="selectClass(13)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_13.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker13[onclick="selectClass(13)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker14[onclick="selectClass(14)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_14.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker14[onclick="selectClass(14)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker15[onclick="selectClass(15)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url(https://assets.krunker.io/textures/classes/icon_15.png);
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+    border         : 3px solid var(--main-color);
+}
+
+#menuClassPicker15[onclick="selectClass(15)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+
+/* SIDE MENU BUTTONS */
+.menBtnIcn {
+    color: var(--main-color) !important;
+}
+
+.menuItem:hover .menBtnIcn {
+    color: var(--hover-color) !important;
+	transform: scale(.9) rotate(20deg);
+	transition: .5s;
+}
+
+#menuItemContainer, #compClassPHolder, #compBtnLst{
+    background: transparent;
+}
+
+.compMenBtnS, .compSwpTmB {
+    background-color: var(--main-color) !important;
+    border: 0px;
+}
+
+.compClassPItm, .compPLstIcn {
+    border: 4px solid var(--main-color) !important;
+}
+
+.cmpTmHed {
+    color: var(--hover-color);
+    text-shadow: 0px 0px 0 !important;
+}
+
+.compTScrB {
+	background: var(--black) !important;
+}
+
+/* CHAT */
+#chatHolder {
+	bottom: 10% !important;
+
+}
+
+#chatList {
+    background-color: #00000000;
+}
+
+
+#chatInputHolder {
+	background-color: transparent;
+	border: 10px;
+}
+
+#chatInput {
+	background-color: transparent;
+	border: 0px;
+}
+
+.chatMsg[style="color:#fc03ec"] {
+    color: var(--main-color) !important;
+}
+#bottomLeftHealthBar{
+    background-color:rgb(255 255 255 / 0%)
+  }
+  
+  .nHealthBarSeg{
+    display:inline-block;
+    width:100%;
+    height:30px;
+    background-color:rgba(0,0,0,.4)
+  }
+  
+  .weapItemInner{
+    color:rgba(255,255,255,.7);
+    background-color:rgb(255 255 255 / 0%);
+    margin:3px;
+    padding:2px 10px;
+    display:inline-block
+  }
+  
+  #chatInputHolder{
+    width:100%
+  }
+  
+  #bottomLeftClassImg{
+    width:100%;
+    height:100%;
+    image-rendering:pixelated;
+    image-rendering:-moz-crisp-edges;
+    image-rendering:crisp-edges;
+    border-radius:10px
+  }
+  
+  #bottomLeftHolder{
+    z-index:10;
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    text-align:left
+  }
+  
+  #bottomLeftHealthBar{
+    display:flex;
+    bottom:0%;
+    margin:-10px;
+    height:0
+    
+    
+  }
+  
+  .nHealthBarSeg{
+    width:40px!important;
+    display:inline-block!important;
+    border-radius:5px!important;
+    margin-right:6px!important;
+    height:48px!important;
+    background-color:rgba(0,0,0,.4)!important
+  }
+  
+  .nHpBSeg{
+    height:48px!important;
+    border-radius:5px!important;
+    -webkit-box-shadow:inset 0 -10px 0 0 rgba(0,0,0,.28)!important;
+    -moz-box-shadow:inset 0 -10px 0 0 rgba(0,0,0,.28)!important;
+    box-shadow:inset 0 -10px 0 0 rgba(0,0,0,.28)!important
+  }
+  
+  #bottomLeftHealth{
+    position:absolute;
+    background-color:rgba(0,0,0,0);
+    border-radius:5px;
+    padding:3px;
+    bottom:60px;
+    padding-right:7px;
+    padding-left:9px;
+    color:#fff;
+    font-size:20px;
+    will-change:transform;
+    display:inline-block;
+    left:0
+  }
+  #game-overlay{
+    background-color: transparent !important ;
+  }
+
+/* IN GAME HUD ----------------------------------------------------------------------------------------------------------*/
+/* HEALTH */
+
+/*#bottomLeftHealthBar {
+    width: 330px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #2c2c2c !important;
+    position: fixed;
+	column-gap: 0px;
+  	padding: 0;
+    left: 20%;
+    bottom: 137px;
+    outline: 3px solid var(--hover-color);
+    border-radius: 0;
+    transform: skewX(-24deg) translateX(calc(-50% - 200px));
+}
+
+
+/*.nHealthBarSeg {
+    width: 330px;
+    height: 14px;
+    margin-left: -3px;
+    border-radius: 0;
+    background-color: transparent !important ;
+}
+
+.nHpBSeg {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.nHpBSeg {
+    background-color: var(--main-color) !important;
+}
+
+#bottomLeftHealth {
+    width: unset !important;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: calc(50% + 30px);
+    bottom: 10px;
+    color: var(--hover-color) !important ;
+    font-size: 35px;
+    text-align: left !important;
+    transform: translateX(calc(-50% - 360px)) translateY(-141px);
+    background-color: transparent !important ;
+    text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+
+/* RELOAD BAR */
+/*#ammoVal {
+    width: 100%;
+    text-shadow: 2px 4px 6px rgb(30, 30, 30);
+    position: fixed;
+    bottom: 20px;
+    right: calc(50% - 270px);
+    color: var(--hover-color);
+    font-size: 57.75px;
+    transform: skewX(-30deg);
+    text-align: right;
+}
+
+#ammoHolder  {
+    width: 481px;
+    height: 20px;
+    background-image:linear-gradient(to right,rgb(44, 44, 44),rgb(44, 44, 44));
+    background-color: var(--main-color);
+    border-radius: 0;
+    outline: 5px solid var(--hover-color);
+    position: fixed;
+    left: 50%;
+    bottom: 134px;
+    transform: translateX(calc(-50% + 201px)) skewX(30deg) scale(.65) !important;
+    
+}
+
+/* WEAPON DISPLAY */
+/* Weapon Item Styling */
+
+.weapItem{
+    background-color:rgb(255 255 255 / 0%);
+    margin-bottom:-10px;
+    border-radius:0
+  }
+    
+  .weapIcon{
+    width:120px;
+    height:60px
+  }
+  
+  .weapSkin{
+    background-color:rgb(255 255 255 / 0%);
+    font-size:0
+  }
+  .debugInfo{
+    display:inline-block;
+    vertical-align:top;
+    text-align:right;
+    margin-top:7px
+  }
+
+/* Reload prompt */
+
+#reloadMsg {
+    bottom: calc(30% - 200px);
+    background-color: transparent !important;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 0;
+    }
+    
+    #reloadMsg::before {
+    content: '! 自闭症患者 !';
+    position: center;
+    align-items: center;
+    font-size: 26px;
+    }
+
+/* Timer Styling */
+#timerHolder.topLeftOld {
+    text-align: left!important;
+    margin-right: 10px;
+    margin-bottom: 10px!important;
+    border-radius: 4px;
+    vertical-align: top!important;
+    width: unset!important;
+    background-color: rgb(20 20 20 / 0%);
+    text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+#timerInner.topLeftOld {
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 3px;
+    background-color: rgb(108 108 108 / 0%);
+    display: inline-block;
+}
+
+#timerVal.topLeftOld {
+    padding-left: 10px;
+    font-size: 50px!important;
+    margin-bottom: 81px !important;
+    text-shadow: unset!important;
+}
+
+#timerIcon.topLeftOld {
+    display: none;
+}
+
+/* Match Info Styling */
+
+#clientWatermark::before {
+    display: none !important;
+}
+
+#clientWatermark::after {
+    display: none !important;
+}
+
+#matchInfo.topLeftOld {
+    font-size: 0px!important;
+}
+
+#matchInfo.topLeftOld:after {
+    content: var(--waterMark);
+    text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+    color: white;
+    font-size: 30px;
+}
+#teamScores {
+    margin-top: 10px;
+}
+
+
+/* LeaderBoard Name*/
+
+/*.leaderNameM {
+    font-size: 0px;
+   }
+   
+   #leaderboardHolder, .greyInlineInnerMid, #leaderContainer {
+     background-color: transparent;
+   }
+       
+   
+   #leaderDisplay {
+    border-radius: 2px;
+    background-color: var(--ingame-bg);
+   }
+  
+/* End Table Name Styling */
+
+ 
+  .endTableN[style="color:rgba(255,255,255,0.6)"] {
+    color: rgb(255, 255, 255) !important;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+  
+  /* Menu Account Username Styling */
+ /* #menuAccountUsername {
+      font-size: 0;
+  }
+  
+
+  /* fps, ping Shit */
+
+#ingameFPS,
+#pingText {
+    color: var(--main-color) !important;
+}

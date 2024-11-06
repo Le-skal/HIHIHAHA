@@ -1,0 +1,978 @@
+ /* Credits */
+ /* REMOVAL CSS BY ENVY */
+ /* css made by jitchu */
+ /* css used by PLURAVP */
+ /* CSS by aaxt / aax7 / Axxiee */
+ /* The Healthbar and Health are stolen from Ephemeral by ashevoy, go check out their epic CSS - Link: https://ashevoy.github.io/kc/nonc/main_custom.css */
+
+
+
+/* Variables */
+
+:root {
+  --Name:"🐼㊗";
+  --waterMark:"香港 🕊️";
+  --gif: url(https://cdn.discordapp.com/attachments/1214681883984527410/1231664128381423757/19884312_1007450012724498_8345367932877777421_n_by_najimlg_dbgwlor-350t.png?ex=6708bd5b&is=67076bdb&hm=d7e4ed79514688fc8f0ec7f939d3ecd45eb95f80fb575da666e7ffaadc101c3b&);
+  --width: 160px;
+  --weapcolor: rgb(0, 0, 0);
+  --ingame-bg: #0000004a;
+  --ts: #00000078;
+  --white: #ffffff;
+  --div-grey: rgb(255 255 255 / 0%);
+  --div-black: rgb(255 255 255 / 0%);
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: gamefont;
+  src: url(https://fonts.gstatic.com/s/nunito/v20/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTQ3jw.woff2);
+}
+
+/* REMOVAL CSS BY ENVY */
+
+/* Updated 11/20 */
+
+/* Removal */
+
+#hudClassIcon,
+#gameNameHolder {
+    display: none;
+}
+#ammoIcon,
+#challIcon,
+#timerIcon,
+#mainLogo,
+#gameLogo,
+#curGameInfo > div {
+  display: none !important;
+}
+#aHolder,
+#clientExit,
+#rankedSoonTm,
+#newsHolder,
+#youNewDiv,
+#onetrust-consent-sdk,
+.weapKey,
+.imageButton,
+#editorBtnM,
+.headerBarRight .verticalSeparator,
+#seasonLabel,
+.krSocial,
+#mailCount,
+#voiceDisplay,
+#bubbleContainer,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+#loadEditrBtn,
+.settingsBtn[onclick="openOneTrust()"],
+.menuSocialB,
+.setSugBox2,
+#mainLogo,
+#termsInfo :not(div[onClick*="Window(35)"]),
+.menuItemTitle,
+#weapDisplay,
+#menuWindow::-webkit-scrollbar,
+#maxHP,
+#loadTipsHolder,
+#loadInfoLHolder,
+#loadInfoRHolder,
+#curGameInfo,
+#reloadMsg {
+  display: none !important;
+}
+
+.verticalSeparator {
+  background-color: transparent;
+}
+
+.button,
+.button:hover,
+.quickJoin,
+.setHed {
+  border: hidden !important;
+}
+
+.button.buttonB {
+  height: 65px !important;
+}
+#subLogoButtons {
+  bottom: 8% !important;
+}
+.endTableN[style="color:#fff"]{
+  font-size: 0px;
+}
+.endTableN[style="color:#fff"]:before {
+  content: var(--Name);
+  font-size: 25px;
+}
+.endTableN[style="color:rgba(255,255,255,0.6)"] {
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+}
+#seasonLabel {
+    display: none !important;
+}
+.voiceOff:after {
+  display: none !important;
+}
+#recTimer {
+  display: none !important;
+}
+#chatSwitch:after {
+  display: none !important;
+}
+
+  /* Menu ui */
+  #menuAccountUsername { font-size: 0 }
+  #menuAccountUsername::before {
+      content: var(--Name);
+      font-size: 19px !important;
+      vertical-align: middle;
+      color:white !important;
+  }
+  
+  img#editorBtnM {
+      display: none;
+  }
+  
+  .menuSocialB {
+      display: none;
+  }
+  
+  .verticalSeparator {
+      height: 0;
+  }
+  
+  #homeStoreAd {
+      display: none;
+  }
+  
+  div#newUserGuide {
+      display: none;
+  }
+  
+  .youNewDiv {
+      display: none;
+  }
+  
+  div#updateAdIcon {
+      display: none;
+  }
+  
+  #krDiscountAd {
+      display: none;
+  }
+  
+  #menuItemContainer {
+      background: rgb(0 0 0) !important;
+  }
+  
+  .headerBar {
+      background-color: rgb(0 0 0) !important;
+  }
+  
+  div#NewAltManager {
+      display: none !important;
+  }
+  
+  #signedInHeaderBar {
+      width: 100% !important
+      ;
+  }
+  
+  .youNewDiv {
+      display: none !important;
+  }
+  
+  .material-icons-outlined {
+      color: white !important;
+  }
+  
+  div#PC7WaterMark2 {
+      display: none !important;
+  }
+  #clientWatermark::before {
+    display: none !important;
+  }
+
+  #clientWatermark::after {
+    display: none !important;
+  }
+  
+  .button {
+      background-color: rgb(0 0 0) !important;
+  }
+  
+  .buttonP, .buttonR, .buttonPI, .buttonG {
+      border: 4px solid #ffffff!important;
+  }
+  
+  #policeButton {
+      border: 4px solid #ffffff!important;
+  }
+  
+  
+  #mapInfoHld {
+      border-bottom: 5px solid #ffffff;
+  
+  }
+  
+  #menuClassIcn {
+      display: none;
+  }
+  
+  #termsInfo {
+      display: none;
+  }
+  
+  #streamContainer {
+      display: none;
+  }
+  
+  #signedOutHeaderBar {
+      width: 100% !important;
+  }
+  
+  #menuServerInfoContainer {
+      display: flex;
+      width: 30vw;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: center !important;
+  }
+  
+  div#menuPingDisplay:after {
+      content: "ジッチュ";
+      color: white;
+      font-size: 18px;
+      margin-left: 20px;
+  }
+  
+  #menuRegionLabel {
+      margin-right: 20px;
+  }
+  span#spectButton {
+      display: none !important;
+  }
+  
+  #menuWindow.dark {
+      background-color: #000000;
+  }
+  
+  .settingsHeader {
+      background-color: #000;
+  }
+  
+  .settingsBtn {
+      background-color: #000000;
+  }
+  
+  .settingsBtn {
+      background-color: #000000 !important;
+  }
+  
+  input:checked+.slider {
+      background-color: #545151;
+  }
+  
+  .setHed {
+      border: 4px solid rgb(255 255 255 / 90%);
+      background-color: rgb(0 0 0);
+      color: #fff;
+  }
+  
+  #aHolder {
+      display: none !important;
+  }
+  
+  #selectorContainer {
+      background-color: var(--ingame-bg);
+  }
+  
+  
+  .loadoutBtn {
+      background-color: #000000;
+  }
+  
+  .winSelH {
+      background: #000000;
+  }
+  #itemSearchH {
+    background-color: transparent;
+  }
+  #itemSearch{
+    background-color: #000;
+    border: none;
+  }
+  
+  
+  .winClose {
+      background: #000000;
+  }
+  
+  .custBack {
+      background: #00000082;
+  }
+  
+  .skinCard {
+      background-color: rgb(0 0 0 / 46%);
+  }
+  
+  
+  .classCard {
+      background-color: #000000;
+  }
+  
+  
+  .premiumSkinCol {
+      color: #ffffff!important;
+  }
+  
+  div#menuFPSDisplay {
+      color: white !important;
+  }
+  
+  span#menuFPS {
+      color: white !important;
+  }
+  
+  .buttonO {
+      border: 4px solid #ffffff!important;
+  }
+  
+  #teamScores {
+      background-color: rgb(0 0 0 / 0%);
+  }
+  
+  div#endAHolderL {
+      display: none !important;
+  }
+  
+  div#endAHolderR {
+      display: none !important;
+  }
+  
+  #doubleXPHolder {
+      border: 6px solid #ffffff;
+  }
+  
+  .greyInlineInnerMid {
+      background-color: transparent !important;
+  }
+  
+  #bottomLeftClassImg {
+      border-radius: 5px !important;
+  }
+  
+  #topRightAdHolder {
+      display: none !important;
+  }
+  
+  /* shop item text test */
+
+
+  #bundlePop, #premiumPop {
+      pointer-events: all;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1035px;
+      transform: translate(-50%,-50%);
+      color: #fff;
+      box-shadow: 2px 2px 8px rgb(255 255 255 / 82%);
+      background-color: #000000;
+      border: solid white 2px;
+      display: none !important;
+  }
+  
+  .bundlPopBuyC {
+      background: #000000!important;
+      border: solid white 2px;
+      display: none !important;
+  }
+  
+  #bundlCreatorCodeBtn {
+      background-color: white !important;
+      color: black;
+  }
+  
+  
+  .bundleItmBtn {
+      background: #000000;
+      border: solid white 2px;
+  }
+  
+  .bundleCrd {
+      background: #000000;
+      border: solid white 2px;
+  }
+  
+  span.material-icons {
+      color: white !important;
+  }
+  
+  .vouchPop {
+      background-color: #000000;
+      border: solid white 3px;
+  }
+  
+  div#genericPop div {
+      color: white !important;
+  }
+  
+  #redVouch {
+      width: 379px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      background-color: black;
+      border: solid white 2px;
+  }
+  
+  .redVouchBtn {
+      background-color: #000000;
+      border: solid white 2px;
+      color: #000 !important;
+  }
+  #loadingBg{
+    background-image: url(https://cdn.discordapp.com/attachments/1066716767285682229/1067161902792327379/1247647.jpg?ex=66767b38&is=667529b8&hm=29780d672381ecb0265666b43a1035f43e4dd40529d175f0b3d4f293a23103f1&) !important;
+    z-index: 5 !important;
+  }
+
+/* HeaderBar */
+.headerBar.headerBarRight {
+  background-color: transparent;
+}
+
+.headerBar {
+  background-color: var(--ingame-bg);
+}
+
+/* Chat Holder */
+
+#chatInputHolder {
+  width: calc(100% + 40px) !important;
+  background-color: var(--ingame-bg);
+  border: none;
+  padding-left: 0;
+}
+
+#chatInput {
+  width: 80%;
+  margin-left: -110px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+#chatSwitchHolder {
+  background-color: transparent;
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+}
+
+.chatMsg[style*="color:#fc03ec"] {
+	color: #8a8a8a !important;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+
+}
+[style*="color:#eb5656"] {
+	color: rgb(138, 138, 138) !important;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+}
+
+[style*="color:#9eeb56"] {
+	color: rgb(255, 255, 255) !important;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+/* Ammo */
+#ammoHolder {
+  position: fixed;
+  background-color: transparent;
+  background-image:linear-gradient(to right,white,white);
+  transform: unset;
+  width: 50px;
+  height: 4px;
+  top: calc(50% + 35px);
+  left: calc(50% - 25px);
+  padding: 0;
+  padding-top: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+#ammoVal {
+  display: inline-block;
+  text-shadow: 7px 7px 3px rgba(30, 30, 30, .5);
+  position: fixed;
+  background-color: transparent;
+  font-size: 75px;
+  right: calc(45% - var(--hpBarWidth) / 2);
+  top: 82.5%;
+  color: white;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+  font-family: gamefont;
+  letter-spacing: 2px;
+}
+
+#ammoMax {
+  display: none;
+}
+
+#ammoIcon {
+  background-color: transparent;
+  display: none !important;
+}
+
+
+/* timer */
+
+#timerDisplay {
+  align-items: center;
+  padding: 10px 7px 4px 7px !important;
+  height: 50px !important;
+}
+
+#timerVal {
+  position: relative;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+}
+/* LeaderBoard Name*/
+
+.leaderNameM {
+ font-size: 0px;
+}
+
+#leaderboardHolder, .greyInlineInnerMid, #leaderContainer {
+  background-color: transparent;
+}
+    
+.leaderNameM:before {
+ font-size: 20px;
+ content: var(--Name);
+ color: #ffffff;
+ 
+}
+
+.leaderNameM span {
+  font-size: 20px;
+  background-image: linear-gradient(to top, #ff0000, #f00000);
+  animation: gradient-border 1.3s linear infinite;
+  background-size: 400% 100%;
+  color: transparent !important;
+  -webkit-background-clip: text;
+}
+
+.leaderName {
+	color: #8a8a8a;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+}
+
+.leaderNameF {
+	color: rgb(255, 255, 255);
+  text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+}
+
+
+/* MISC */
+
+#hudClassIcon,
+#hudClassIcon img,
+#timerDisplay,
+#leaderDisplay,
+.countIcon,
+#curGameInfo,
+#menuWindow.dark,
+.settingsHeader,
+.setHed {
+  border-radius: 2px;
+  background-color: var(--ingame-bg);
+}
+
+#hudClassIcon img {
+  background-color: transparent;
+}
+
+#activateKDM,
+.accountButton,
+.loadoutBtn,
+.settingsBtn,
+.subPassChg,
+.lnkTw,
+.creatorCodeBtn,
+.redVouchBtn,
+#hostMenuBtn,
+.hostCBtn,
+.advancedToggle[style*="background-color"],
+.updDisN,
+.searchBtn,
+.quickJoin,
+.rnkShpBtn,
+.hostPresetBtn,
+.hostToggle,
+#declineBtn,
+.punishButton,
+.compSwpTmB,
+.joinBtn,
+.openCollection,
+.mapFndB,
+.imageListAdd,
+.bundlPopBuyB,
+.menuItemTitle,
+.menuItem::before,
+.setHed,
+.settName {
+  border-radius: 2px;
+  text-shadow: 0px -1.6px 0px var(--ts), 0px 1.6px 0px var(--ts),
+    2px 0px 0px var(--ts), -2px 0px 0px var(--ts), 1.6px 2px 0px var(--ts),
+    -1.6px 2px 0px var(--ts), 1.6px -2px 0px var(--ts),
+    -1.6px -2px 0px var(--ts) !important;
+}
+
+.settingsHeader {
+  position: relative;
+}
+
+#windowHolder {
+  background-color: transparent !important;
+}
+
+.settingsHeader {
+  background-color: transparent;
+}
+
+/* fps & ping */
+
+#curGameInfo,
+.debugInfo {
+  padding: 5px;
+}
+
+#curGameInfo div {
+  font-size: 0;
+}
+
+#matchInfo.topLeftOld {
+    font-size: 0px!important;
+}
+
+#matchInfo.topLeftOld:after {
+    content: var(--waterMark);
+    text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+    color: white;
+    font-size: 30px;
+}
+
+#pingDisplay .material-icons {
+  font-size: 20px !important;
+}
+
+.adsbygoogle.adsbygoogle-noablate {
+  display: none !important;
+}
+
+#instructions {
+  visibility: hidden;
+}
+
+
+
+#chatInputHolder{
+    border: 0px solid rgba(0,0,0,.0);
+    background-color: rgba(0,0,0,.0);
+}
+
+#uiBase.onGame #chatHolder {
+  left: 20px !important;
+  bottom: 100px !important;
+}
+
+#chatList{
+  background-color: rgba(0,0,0,.0);
+  color: #000000!important;
+  }
+
+/* Ingame UI */
+
+/* health */
+#bottomLeftClassImg {
+  content: var(--gif);
+  position: fixed;
+  top: (100% - 120px);
+  left: 0%;
+  width: var(--width);
+  height: 120px;
+  visibility: visible !important;
+}
+
+#bottomLeftPlayer {
+  background-color: transparent;
+}
+#bottomLeftPlayerRight {
+  background-color: transparent;
+}
+
+:root {
+  --hpBarWidth: 480px;
+  --ammohpFontSize: 80px;
+}
+#bottomLeftHealthBar {
+  background: 0px rgba(0,0,0,.2);
+  column-gap: 0px;
+  padding: 0;
+  /*  outline: 2px solid #0006; */
+  box-shadow: 5px 5px 0 rgba(0,0,0,.3);
+  border-radius: 6px;
+}
+#bottomLeftChallIcon {
+  display: none;
+}
+.nHealthBarSeg {
+  box-shadow: 0 0 black;
+  height: 32px;
+}
+#bottomLeftTeamType {
+  display: none;
+}
+#bottomLeftTeamName {
+  display: none;
+}
+.nHealthBarSeg:first-child .nHpBSeg{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.nHealthBarSeg:last-child .nHpBSeg {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.nHpBSeg {
+  border-radius: 0px;
+}
+.nHealthBarSeg {
+  background: 0;
+  margin-left: -1px;
+}
+#bottomLeftPlayerMid {
+  position: fixed;
+  top: 85%;
+  left: calc(50% - var(--hpBarWidth) / 2);
+}
+#bottomLeftChallIcon {
+  display: none;
+}
+#bottomLeftPlayerMid {
+  width: var(--hpBarWidth);
+}
+#bottomLeftHealth {
+  display: none;
+}
+
+/* weapon item*/
+.weapItem{
+  position:absolute;
+  bottom:0;
+  filter:drop-shadow(2px 2px var(--weapcolor)) drop-shadow(-2px -2px var(--weapcolor)) drop-shadow(-2px 2px var(--weapcolor)) drop-shadow(2px -2px var(--weapcolor)) drop-shadow(4px 4px 0px var(--weapcolor));
+  opacity:0 !important;
+  transition-duration:0.25s;
+  height:0;width:500px
+}
+
+#weapDisplay{
+  position:fixed;
+  right:50%!important}
+.weapItem{
+  position:fixed!important;
+  bottom:0%;right:calc(50% - 60px)!important;
+  opacity:0!important}
+.weapItem[
+  style*="1"]{
+    opacity:1 !important;
+    height:80px
+}
+.weapSkin{
+  display:none!important}
+.weapItem{
+  color:#000000;
+  background-color:rgb(20 20 20 / 0%)}
+.weapItemInner{
+  color:rgba(255,255,255,.7);
+  background-color:rgb(108 108 108 / 0%)}
+.weapSkin{
+  background-color:rgb(20 20 20 / 0%);
+  color:#ffffffcf;
+  display:none}
+.weapKey{
+  color:#fff;
+  font-size:14px;
+  position:absolute;
+  background-color:rgb(0 0 0 / 0%);
+  display:none
+}
+
+
+.weapStreakHolder{
+  background-color:rgb(20 20 20 / 0%);
+  color:#fff
+}
+.weapStreakInner{
+  color:rgb(255 255 255);
+  background-color:rgb(108 108 108 / 0%);
+  display:none}
+
+/* Reload prompt */
+
+#reloadMsg {
+bottom: calc(30% - 200px);
+background-color: transparent !important;
+border: none;
+color: red;
+font-size: 0;
+}
+
+#reloadMsg::before {
+content: '! 自闭症患者 !';
+position: center;
+align-items: center;
+font-size: 26px;
+}
+
+/*Start of Krunker*/
+
+#initLoader {
+background: #000;
+}
+
+#loadTipsHolder,
+#lC-img,
+#loadGamNm,
+#aHolder,
+#loadEditrBtn,
+.lC-l,
+.lC-t,
+#lC-img,
+.lC-b,
+.lC-bt,
+#bubbleContainer,
+.lC-r,
+#loadInfoLHolder {
+display: none !important;
+}
+.lC-sides {
+animation: initial;
+transform-style: preserve-3d;
+transform: initial;
+}
+#lC-cont {
+display: block;
+width: 300px;
+}
+
+#lC-cont:before {
+content: "Loading...";
+color: #fff;
+display: block;
+font-size: 25px;
+font-weight: 500;
+margin-bottom: 2px;
+width: 100%;
+text-align: left;
+}
+.lC-cube,
+.lC-cube * {
+width: 300px;
+height: 25px;
+position: absolute;
+margin: 0;
+}
+
+.lC-cube {
+transform: translate(0, 0);
+border: 2px inset var(--black);
+margin: 0;
+}
+
+#topRightAdHolder {
+background: none;
+}
+
+#loadInfoRHolder {
+font-size: 0px;
+}
+#loadInfoRHolder:before {
+content: "CSS created by Ghosty";
+font-size: 20px;
+color: #fff;
+}
+
+.lC-f {
+animation: loader 10s ease forwards;
+background: ghostwhite;
+color: #fff;
+padding: 0px;
+margin: 0;
+width: 0;
+}
+@keyframes loader {
+0% {
+  width: 0;
+}
+
+20% {
+  width: 10%;
+}
+
+25% {
+  width: 24%;
+}
+
+43% {
+  width: 41%;
+}
+
+56% {
+  width: 50%;
+}
+
+66% {
+  width: 52%;
+}
+
+71% {
+  width: 60%;
+}
+
+75% {
+  width: 76%;
+}
+
+94% {
+  width: 86%;
+}
+
+100% {
+  width: 100%;
+}
+}
+
+/* fps, ping Shit */
+
+#ingameFPS,
+#pingText {
+    color: #ffffff !important;
+    text-shadow: 2px 4px 6px rgb(30, 30, 30) !important; 
+}

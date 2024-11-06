@@ -1,0 +1,852 @@
+:root {
+    --text-color: white;
+	--cssname: ' FLOT Client v1.1';
+	--glass-background: #ffffff00 !important;
+	--glass-border: #fff !important;
+	--bg-color: #ffffff24;
+    --uiscale: 0.7; /* 0.623 for 768p */
+	--white: #fff;
+    --black: #000;
+    --outline: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    --outline2: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
+    --logo-size: scale(1);
+}
+
+#uiBase {
+    height: calc(100%/var(--uiscale)) !important;
+    width: calc(100%/var(--uiscale)) !important;
+    transform: scale(var(--uiscale)) !important;
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://reizu.moe/fonts/Renogare.ttf)
+}
+
+#subLogoButtons {
+	bottom: 1%;
+}
+
+/* Removals */
+
+#tlInfHold, #aHolder, #topRightAdHolder, .endAHolder {
+    display: none !important;
+}
+
+#termsInfo {
+    display: none;
+}
+
+#recTimer {
+    display: none;
+}
+
+#chatSwitchHolder {
+    display: none;
+}
+
+#mainLogoFace, #seasonLabel {
+    transform: scale(0);
+}
+
+#headerRightSocial, #streamContainer {
+    display: none !important;
+}
+
+.setSugBox2 {
+    display: none;
+}
+
+.custSubContainer {
+    display: none;
+}
+
+.itemOwn {
+    display: none;
+}
+
+.leaderCounter {
+    display: none;
+}
+
+.weapKey, .weapSkin {
+    display: none;
+}
+
+#bottomLeftChallIcon {
+    display: none;
+}
+
+#bottomLeftTeamType, #bottomLeftTeamName {
+    display: none;
+    background: transparent;
+}
+
+#timerIcon.topLeftOld {
+    display: none;
+}
+
+#bottomLeftPlayer, #bottomLeftPlayerLeft,
+#bottomLeftPlayerRight {
+	background: transparent;
+}
+
+#returnHolder {
+	display: none;
+}
+
+/* buttons */
+
+.buttonP, .buttonR, .buttonPI, #policeButton, .buttonG {
+    box-shadow: none !important;
+    background: transparent;
+    text-align: left;
+    border: none !important;
+    color: var(--white);
+    text-shadow: 12px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+.buttonP:hover, .buttonR:hover, .buttonPI:hover, #policeButton:hover, .buttonO:hover {
+    border: none !important;
+}
+
+.buttonO {
+    background: transparent !important;
+    border: none !important;
+}
+
+.accBtn {
+    text-align: center;
+    border: none !important;
+}
+
+.accBtn:hover {
+    border: none !important;
+}
+
+/* Left Menu Bar */
+
+#menuItemContainer {
+    width: unset;
+    height: 480px;
+    background-color: transparent;
+    left: 40px;
+    bottom: 40px;
+    top: unset;
+    justify-content: space-between;
+}
+
+.menuItem {
+    align-items: baseline;
+    flex-grow: unset;
+    background-image: linear-gradient(90deg, #fff 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 1px);
+    width: fit-content;
+    transition-duration: 0s;
+	text-shadow: 12px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+.menuItem:hover {
+    background-position-x: 0%;
+}
+
+.menBtnIcn {
+    display: none !important;
+}
+
+.menuItem .menuItemTitle {
+    margin: 0;
+    font-size: 30px !important;
+    text-transform: uppercase;
+    mix-blend-mode: exclusion;
+    padding: 0 12px;
+}
+
+.menuItem[onclick*="Window(1)"] {
+    position: absolute;
+    bottom: 2px;
+    left: 170px;
+    background-image: none;
+}
+
+#menuBtnSettings {
+    text-transform: lowercase;
+    font-family: 'Material Icons';
+    font-size: 50px !important;
+    transition-duration: 0.25s;
+}
+
+#menuBtnSettings:hover {
+    transform: rotate(180deg);
+}
+
+#clientExit {
+    position: fixed;
+    bottom: 56px;
+    left: 258px;
+    background-image: none;
+}
+
+#menuBtnExit {
+    position: fixed;
+    bottom: 56px;
+    left: 280px;
+}
+
+#menuBtnExit {
+    text-transform: lowercase;
+    font-family: 'Material Icons';
+    font-size: 0 !important;
+    transition-duration: 0.25s;
+}
+
+#menuBtnExit:hover {
+    transform: rotate(180deg);
+}
+
+#menuBtnExit::after {
+    content: 'cancel';
+    font-size: 40px;
+}
+
+/* UI Animation */
+
+#instructionHolder {
+    opacity: 0.9;
+}
+
+#instructions {
+    color: var(--white);
+    text-shadow: 12px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+/* Chat Edit */
+
+#uiBase.onMenu #chatHolder {
+    left: 2.6%;
+    bottom: 37%;
+    transform: scale(1.1);
+}
+
+#uiBase.onGame #chatHolder {
+    bottom: 14%;
+    left: 1.7%;
+    transform: scale(1.1);
+}
+
+#uiBase.onEndScrn #chatHolder {
+	left: 42.5%;
+	bottom: 10px;
+}
+
+.chatItem {
+    font-size: 20px;
+}
+
+#chatList {
+    background-color: var(--bg-color);
+}
+
+#chatInputHolder {
+    background-color: var(--bg-color);
+}
+
+#uiBase.onMenu #chatInput {
+    margin-right: -8px;
+}
+
+.greyInner, .greyInlineInner, .greyInlineInnerMid {
+    margin: 3px;
+    background-color: transparent;
+    padding: 5px;
+}
+
+#chatInput {
+    background-color: transparent;
+    border: none;
+    margin-left: -120px;
+}
+
+[style*="color:#fc03ec"] {
+    color: var(--text-color) !important;
+}
+
+.headShotChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px var(--text-color)) drop-shadow(0px 0px 1px var(--text-color)) drop-shadow(2px 0px 1px var(--text-color));
+}
+
+.thrownChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px var(--text-color)) drop-shadow(0px 0px 1px var(--text-color)) drop-shadow(2px 0px 1px var(--text-color));
+}
+
+.fistChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px var(--text-color)) drop-shadow(0px 0px 1px var(--text-color)) drop-shadow(2px 0px 1px var(--text-color));
+}
+
+.weaponChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px var(--text-color)) drop-shadow(0px 0px 1px var(--text-color)) drop-shadow(2px 0px 1px var(--text-color));
+}
+
+.meleeChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px var(--text-color)) drop-shadow(0px 0px 1px var(--text-color)) drop-shadow(2px 0px 1px var(--text-color));
+}
+
+#chatList * {
+    user-select: text;
+}
+
+/* Customize Edit */
+
+#menuClassContainer {
+    bottom: 15px;
+}
+
+#customizeButton {
+    bottom: 10px;
+    opacity: 0;
+    height: 270px;
+    width: 360px;
+    right: 50px;
+}
+
+#classPreviewCanvas {
+    transition: opacity .2s ease-in;
+    margin-bottom: -460px;
+    margin-right: -113px;
+}
+
+[style="display:inline-block;position:relative"], #menuClassIcn {
+    top: 300px;
+}
+
+/* Inside Customize Button */
+
+#selectorContainer {
+    background-color: transparent;
+}
+
+.selectorItem {
+    border: none !important;
+}
+
+.selectorItem:hover {
+    background: transparent;
+	border: 3px solid white !important;
+}
+
+/* Header edit */
+
+.headerBar, #mLevelCont {
+    background-color: transparent !important;
+}
+
+/* Main Logo */
+
+#mainLogo {
+    content: url(https://media.discordapp.net/attachments/886431675574280273/894086357180350474/Untitled-1.gif?ex=6709598e&is=6708080e&hm=f4c5ce47b1057ba87b6331200f3fc7c9132eb745c2c10ac55f7f44da41269142&=&width=1216&height=684) !important;
+    transform: scale(1);
+}
+
+/* Settings Edit */
+
+#menuWindow.dark {
+    background-color: var(--bg-color);
+}
+
+.settingsHeader {
+    background-color: transparent;
+}
+
+#settingsTabLayout {
+     border: var(--glass-border) !important;
+     background-color: var(--glass-background);
+}
+
+#settHolder .setHed {
+    background: transparent !important;
+    border: transparent !important;
+    display: none;
+}
+
+.settName {
+    color: white !important;
+}
+
+.settingsBtn {
+    border: var(--glass-border) !important;
+    background-color: var(--glass-background);
+}
+
+.settingsHeader .settingsBtn {
+    background-color: transparent  !important;
+    border: none !important;
+}
+
+.settingTab {
+    background-color: var(--glass-background);
+}
+
+#settHolder .setBodH {
+    border: var(--glass-border) !important;
+     background-color: transparent !important;
+}
+
+.settName, .settNameSmall, .setHed #hostActionH, .mFeatSepar{
+    border: hidden!important;
+    background: transparent !important;
+}
+
+.setHed {
+	background: transparent;
+	border: none;
+}
+
+#menuWindow::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+/* Map Info above host game top left */
+
+#mapInfo:after {
+    content: ' with your Mom'
+}
+
+#mapInfo, #mapInfoHld {
+    color: var(--text-color);
+    text-align: center !important;;
+}
+
+.debugInfo {
+    transform: scale(1.5);
+    margin-left: 30px;
+    margin-top: 30px;
+    color: var(--white);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+#reloadMsg {
+    padding-left:unset;
+    padding-right:unset;
+    line-height:unset;
+    bottom: 42%;
+    font-size:15px;
+    background:transparent;
+    border:none;
+    color:#0000d2;
+}
+
+/* ammo edit */
+
+#ammoHolder {
+    transform: unset;
+    background-color: transparent;
+    position: fixed;
+    left: calc(50% - 40px);
+    bottom: calc(50% - 60px);
+    height: 8px;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(var(--black), var(--black));
+}
+
+#ammoVal {
+    text-shadow: 7px 7px 3px rgba(30, 30, 30, .5);
+    position: fixed;
+    font-size: 90px;
+    right: calc(70px);
+    bottom: 90px;
+    color: white;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-shadow: 12px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+/* Health Edit */
+#bottomLeftPlayer, #bottomLeftPlayerRight  {
+    background-color: transparent;
+}
+#bottomLeftTeamName,
+#bottomLeftTeamType {
+    display: none;
+}
+#bottomLeftHolder, #bottomLeftPlayerLeft {
+    background: transparent !important;
+}
+#bottomLeftHealthBar {
+    background-color: rgb(255 255 255 / 0%);
+    padding: 10px 15px 10px 15px;
+    position: fixed;
+    width: 380px;
+    height: 13px;
+    bottom: 0px;
+    left: 50px;
+}
+#bottomLeftHealthBar {
+    display: flex;
+    padding: 9px;
+    background-color: rgb(108 108 108 / 0%);
+    outline:6px solid black !important;
+    display:inline-flex;
+    transform:skewX(-35deg) !important;
+    bottom:50px;  
+}
+.nHealthBarSeg {
+    background-color: transparent;
+    width: -webkit-fill-available;
+    height: 30px;
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+.nHealthBarSeg:first-child .nHpBSeg{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transform:skewX(0deg) !important;
+}
+.nHealthBarSeg:last-child .nHpBSeg {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    transform:skewX(0deg) !important;
+    transition: .5s;
+}
+#bottomLeftHealth {
+    background-color: transparent;
+    position: fixed;
+    bottom: 70px;
+    left: 120px;
+    font-size: 50px;
+    font-weight: bold;
+}
+#bottomLeftChallIcon {
+    display: none;
+}
+#bottomLeftHealth {
+    background-color: transparent;
+    width: 100px;
+    height: 65px;
+    border-radius: 10px;
+    position: fixed;
+    left: 7.5%;
+    bottom: 9%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+	text-shadow: 12px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+#bottomLeftHealth {
+    color: white;
+    font-size: 98px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    will-change: unset;
+    background: transparent;
+}
+
+#bottomLeftClassImg {
+	margin-bottom: 6.7vh;
+	margin-left: 80%;
+	text-shadow: 12px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+/* Weapon edit */
+
+.weapItem, .weapItemInner {
+    background-color: transparent;
+}
+
+#bottomRight, #weapHolder {
+    position: unset;
+	background: transparent;
+}
+
+#weapHolder:not([style*=none]) {
+    display: flex !important;
+}
+
+.weapItem {
+    position:fixed;
+    right:0;
+    bottom:30px;
+    opacity:0 !important;
+    transform:translateX(-50%) translateY(2px) scale(1.4);
+    transition:transform 0s,opacity 0s;
+	filter: drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black);
+}
+
+.weapItem[style*="opacity: 1"] {
+    opacity:1 !important;
+    transform:translateX(-50%) translateY(0) scale(1.4);
+    transition:transform 0s,opacity 0s;
+}
+
+.weapKey, .weapSkin {
+    display: none;
+}
+
+.weapKey, .weapSkin {
+    display: none;
+}
+
+/* spectate button */
+
+#uiBase.onMenu #spectButton {
+	position: fixed;
+	left: 92%;
+	bottom: 45%;
+	transform: none;
+	text-transform: var(--text-transform);
+}
+
+#spectButton span {
+    font-size: 20px !important;
+}
+
+.sliderSml:before {
+    content: none;
+}
+
+.sliderSml {
+    background: var(--text-color);
+    border-radius: 0px;
+}
+
+.switchsml {
+    width: 40px;
+    height: 25px;
+}
+
+#spectButton :not(.switchsml) {
+    color: var(--text-color) !important;
+}
+
+[style*="font-size:15px;color:rgba(255,255,255,.6)"] {
+	margin-top: 3px;
+}
+
+/* Timer edit */
+
+#timerHolder.topLeftOld, #timerInner.topLeftOld {
+    background-color: transparent;
+    color: var(--white);
+    text-shadow: 1px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+#timerVal.topLeftOld {
+	font-size: 50px !important;
+}
+
+/* Below Timer Edit */
+
+#matchInfo.topLeftOld { font-size: 0 !important; }
+#matchInfo.topLeftOld::after {
+    content: var(--cssname);
+    font-size: 20px;
+    color: var(--text-color);
+    text-shadow: 12px 6px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+#teamScores {
+    background: #ff000000;
+	margin-top: 30px;
+}
+
+.tScore {
+	display: flex;
+	align-items: center;
+}
+
+/* Leaderboard edit */
+
+#leaderboardHolder, #leaderContainer, .statIcon {
+	background: transparent;
+	transform: scale(1.1);
+	margin-right: 15px;
+    margin-top: 10px;
+}
+
+.leaderNameM {
+    color: var(--white);
+    text-shadow: 2px -0px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+.leaderScore {
+    color: white;
+}
+
+/* counters */
+
+.topRightCounters {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.countIcon {
+    background-color: transparent;
+    border-radius: 0;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding: 7px;
+}
+
+.topRightCounters {
+	position: unset;
+	bottom: unset;
+	right: unset;
+}
+
+.countIcon {
+	padding: 10px;
+}
+
+#deathsVal,
+#killsVal,
+#livesDisp,
+#streakVal,
+#myScoreVal {
+    bottom: 7px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    text-shadow: 6px 3px var(--black);
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+#deathsVal::after,
+#killsVal::after,
+#streakVal::after,
+#myScoreVal::after,
+#livesDisp::after {
+    display: block;
+    position: fixed;
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+#deathsVal::after {
+    content: 'Deaths';
+}
+
+#killsVal::after {
+    content: 'Kills';
+}
+
+#streakVal::after {
+    content: 'Streak';
+}
+
+#myScoreVal::after {
+    content: 'Score';
+}
+
+#livesDisp::after {
+    content: 'Lives';
+}
+
+#killsIcon,
+#deathsIcon,
+#streakIcon,
+#scoreCount .material-icons,
+#livesCount .material-icons {
+    display: none;
+}
+
+.kfItem {
+    border-radius: 10px;
+    background-color: var(--ingame-bg-color);
+}
+
+#killStreakHolder {
+    position: fixed;
+    bottom: 75px;
+	right: 15px;
+	margin-right: 0;
+    margin-bottom: 0;
+}
+
+.killStreakItem {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+/* Changes to Sliders */
+
+.sliderM::-webkit-slider-thumb {
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4px white!important;
+}
+
+.sliderM {
+	height: 8px!important;
+	background-color: #ffffffb3;
+}
+.sliderVal {
+	background-color: black;
+}
+input:checked+.slider {
+	background-color: black;
+}
+input:checked+.optCheck {
+	background-color: #4582d1;
+}
+input:hover+.optCheck {
+	background-color: white;
+}
+
+.headerBar,
+#mLevelCont,
+#signedInHeaderBar { border-radius: 0 !important }
+#signedOutHeaderBar.headerBarLeft {
+    width: calc(100% - 162px - 130px);
+    left: 1115px; /* 1000px for non-stretch 1080p, 1017px for non-stretch 768p, 884px for stretch 1080p, and 708px for stretch 768p */
+    top: 3.7%;
+    opacity: 0;
+}
+
+.buttonO {
+	padding-top: 120px !important;
+    width: 500px !important;
+}
+
+/* End Scoreboard */
+
+.endCard {
+	background-color: var(--glass-background);
+}
+
+#tabHolder, .tabBody {
+	background-color: #00000090;
+}
+
+#endTabbedView {
+    min-width: 1500px;
+    display: inline-block;
+    vertical-align: top;
+}

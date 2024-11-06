@@ -1,0 +1,155 @@
+                                                                                        /*
+Angelwings CSS:Angel with no wings,holy knight with no feathers...
+
+Authors:discontinuation (discord:discontinuation)
+  sadophrenia (discord:sadophrenia)
+  cookies (discord:be all;end all#7952 | 883354949562560562)
+*/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap);#bottomLeftClassImg{image-rendering:crisp-edges!Important;-webkit-font-smoothing:antialiased;content:url(https://media.discordapp.net/attachments/791024381912285235/1106890222681206944/w8X80Lt.png?ex=66eff0da&is=66ee9f5a&hm=929d93e6f90b540ad90e2af249ffb71e304729bb02b17b5d225b09bd60a6ce1a&)!important}
+*{font-family:'Montserrat',sans-serif}
+@font-face {
+  font-family: gamefont;
+  src: url(https://fonts.gstatic.com/s/nunito/v20/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTQ3jw.woff2);
+}
+:root{--div-grey:transparent;--div-black:transparent}
+#hudClassIcon{height:330px;bottom:-60px;left:-50px;width:330px;background:none;position:absolute}
+#bottomLeftHealthBar{bottom:140px;z-index:-1;left:277px;background:#000000;transform:skewX(-20deg);height:35px;width:350px;position:absolute;border:5px solid #000000;display:inline-flex}
+#bottomLeftHolder{bottom:-70px;left:-55px}
+#bottomLeftTeamHolder{display:none}
+#bottomLeftPlayer{background-color:transparent!important}
+#bottomLeftPlayerLeft{width:440px;height:440px;display:inline-block;background-color:transparent;margin:3px}
+#bottomLeftPlayerRight{display:none}
+.healthBarSeg{width:48px;width:-moz-available;width:-webkit-fill-available;height:35px;border-radius:0;margin-right:0}
+.hpBSeg{background:white!important;box-shadow:none!important;height:35px;border-radius:0}
+#roundsDisplay{background:none}
+.nHealthBarSeg{background-color:transparent!important;box-shadow:none!important;height:35px;display:flex;margin:0 -3.1px}
+#roundsVal,#roundSub{text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+.roundScrV{border:0!important;background:transparent!important}
+#roundTSc2{color:#3489eb;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#roundTSc1{color:#eb4034;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#roundsVal{font-size:50px}
+#healthValueHolder{display:none}
+#ammoHolder{position:fixed;top:calc(50% + 40px);left:calc(50% - 40px);transform:unset;height:8px;margin:0;padding:0;width:80px;background-color:transparent!important}
+#ammoMax,#ammoIcon{display:none}
+.greyInner{background-color:#FFF0}
+#ammoVal{-webkit-text-stroke:4px #000;text-shadow:7px 7px black,6px 6px black,5px 5px black,4px 4px black,3px 3px black,2px 2px black,1px 1px #000;font-size:60px;font-family:'Montserrat',sans-serif!important;font-weight:700;position:fixed;bottom:150px;left:520px}
+.weapIcon{filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black);position:absolute;bottom:130px;height:55px!important;left:4%;image-rendering:crisp-edges!Important}
+#weapDisplay{position:fixed;right:50%!important}
+.weapItem{position:fixed!important;bottom:30px;left:350px!important;bottom:40px;opacity:0!important}
+.weapIcon{position:fixed!important;transition-duration:0s!important;transform:scale(1.5)}
+.weapItem[style*="1"]{opacity:1!important;transform:translateY(0)}
+.weapItem[style*="0.7"]{opacity:0!important}
+#weapIconMel{bottom:100px}
+.weapKey,.weapStreakHolder,.weapSkin{display:none!important}
+.weapIcon[style*="1"]{opacity:1!important;height:80px}
+#subLogoButtons{bottom:0}
+#faceItIconM{display:none}
+#subLogoButtons div,#subLogoButtons .button{border:0!important;background:none;filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black)}
+
+#timerHolder{width:200px;background:none}
+#timerIcon{display:none!important}
+.countIcon{background:none}
+#myScoreVal{font-size:26px;color:rgba(255,255,255,.5);font-family:'JetBrains Mono',monospace!important;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#myScoreVal:before{content:"P ";color:#fff}
+#scoreCount i{display:none}
+#killsVal{font-size:22px;color:rgba(255,255,255,.5);font-family:'Montserrat',sans-serif!important;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#killsVal:before{content:"K ";color:#fff}
+#killsIcon{width:0;height:0}
+#menuWindow.dark{background:none!Important}
+#deathsVal{font-size:22px;color:rgba(255,255,255,.5);font-family:'Montserrat',sans-serif!important;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#deathsVal:before{content:"D ";color:#fff}
+#deathsIcon{width:0;height:0}
+#streakVal{font-size:22px;color:rgba(255,255,255,.5);font-family:'Montserrat',sans-serif!important;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#streakVal:before{content:"ST ";color:#fff}
+#streakIcon{width:0;height:0}
+#kdVal{font-size:22px;color:rgba(255,255,255,.5);font-family:'Montserrat',sans-serif!important;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#kdVal:before{content:"KD ";color:#fff}
+#kdIcon{width:0;height:0}
+#timerVal.topLeftOld{-webkit-text-stroke:4px #000;text-shadow:7px 7px black,6px 6px black,5px 5px black,4px 4px black,3px 3px black,2px 2px black,1px 1px black!important;font-size:60px!important;font-family:'Montserrat',sans-serif!important;font-weight:700}
+.chatMsg{font-family:'Montserrat',sans-serif!important}
+#compTimBox,#gameMessage{text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important}
+.chatMsg>span{font-family:'Montserrat',sans-serif!important}
+.leaderItem img{filter:brightness(1) drop-shadow(1px 1px black) drop-shadow(-1px -1px black) drop-shadow(-1px 1px black) drop-shadow(1px -1px black) drop-shadow(2px 2px 0 black)}
+.leaderCounter{color:rgba(255,255,255,.5);font-size:22px;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important}
+#fpsDisplay,#fpsDisplay>span{text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important;text-align:left!important;font-size:20px}
+#pingDisplay,#pingDisplay>span{text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important;text-align:left!important;font-size:20px}
+#instructions,#spectButton>span{font-family:'Montserrat',sans-serif!important}
+#spectButton>span{font-size:20px!Important}
+.debugInfo{position:fixed!important;top:103px;left:34px}
+#pingText{color:rgb(158,235,86)!important}
+#pingIcon{display:none}
+.leaderScore{color:rgba(255,255,255,.5);font-size:22px;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important}
+.leaderNameM,.leaderNameM>span{font-size:22px;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important}
+.leaderNameF,.leaderNameF>span{font-size:22px;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important}
+.leaderName,.leaderName>span{font-size:22px;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important}
+.chatItem{font-size:20px;filter:drop-shadow(0 0 black);font-family:'Montserrat',sans-serif!important;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#leaderDisplay{background:none}
+#chatList{text-align:right;overflow-y:auto;background:none}
+#chatInput{text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;text-align:right}
+#chatInputHolder,#chatInput{font-size:20px;font-family:'Montserrat',sans-serif!important;border:none;background:transparent}
+.weapKey{display:none}
+#weapItem_2{padding-top:10px}
+#uiBase.onGame #chatHolder{width:330px;left:calc(100% - 380px);bottom:30px}
+#chatList::-webkit-scrollbar{display:none}
+#matchInfo.topLeftOld,#matchInfo{display:none!important}
+#newsHolder{display:none!important}
+#editorBtnM{display:none}
+.menuSocialB{display:none}
+#headerRight .verticalSeparator{display:none}
+#headerRight{background:transparent}
+#menuPingDisplay{display:none}
+#termsInfo{display:none}
+#streamContainer{display:none}
+#adCon{display:none!Important}
+#freeKRAd{display:none!important}
+#doubleXPAd{display:none!important}
+#updateAd{display:none!important}
+#menuItemContainer{background:linear-gradient(to right,rgb(0 0 0 / 52%) 50%,rgb(0 0 0 / 0%) 100%)!important;z-index:1;top:-90px;left:-390px;padding-top:200px;padding-left:320px;padding-bottom:40px;width:300px}
+.menBtnIcn{color:white!important}
+.menuItem{text-align:left!important;font-family:'Montserrat',sans-serif!important;filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black);font-size:35px!important;width:300px;font-size:30px}
+#menuBtnChall,#menuBtnShop,#menuBtnProfile,#menuBtnSocial,#menuBtnMaps,#menuBtnMods,#menuBtnSettings{font-size:00px!important;text-align:left!important;font-family:'Montserrat',sans-serif!important;filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black)}
+#menuBtnChall:hover,#menuBtnShop:hover,#menuBtnProfile:hover,#menuBtnSocial:hover,#menuBtnMaps:hover,#menuBtnMods:hover,#menuBtnSettings:hover{font-size:45px!important;font-family:'Montserrat',sans-serif!important;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,8px 8px black,7px 7px black,6px 6px black,5px 5px black,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important}
+#signedInHeaderBar{z-index:3;font-family:'Montserrat',sans-serif!important}
+#signedOutHeaderBar .material-icons{display:none!important}
+#signedOutHeaderBar .buttonO{text-align:left;padding-left:30px;filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black);background:transparent!Important;border:none!important;font-size:00px!Important}
+#krDiscountAd,#topRightAdHolder{display:none!Important}
+#signedOutHeaderBar .buttonO:before{content:"Login";font-size:40px!Important}
+#menuClassContainer{top:0;width:400px;left:calc(100% - 350px);position:relative}
+#menuKRCount,#menuJNKCount{font-size:0;font-family:'Montserrat',sans-serif!important}
+.verticalSeparator{display:none}
+#menuAccountUsername{filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black);text-height:40px;font-size:0;font-family:'Montserrat',sans-serif!important;margin-bottom:20px}
+.headerBar{padding-top:20px;padding-left:20px;background:transparent}
+#uiBase.onMenu #chatHolder{width:330px;left:calc(100% - 380px);bottom:30px}
+#recTimer{display:none}
+i#voiceIcon.material-icons.voiceOff{display:none}
+#chatSwitch{opacity:0;filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black);position:absolute;bottom:5px;left:100px}
+#chatSwitch:hover{opacity:1}
+#chatInputHolder{text-align:right!important}
+.progressBarInner{background:white!important}
+#mLevelCont{display:none}
+#menuMiniProfilePic,#mailContainer,#menuKRCount>span[style="color:#fbc02d"],#menuJNKCount>span[style="color:#cc51f8;font-size:27px;margin-left:5px;vertical-align:top;margin-right:-5px;"]{display:none}
+#gameNameHolder{display:none}
+#seasonLabel{display:none}
+#newUserGuide,#rankedBlog{display:none}
+.menuClassPlayerName,.menuClassPlayerClan,.menuClassLevelBox{font-family:'Montserrat',sans-serif!important;font-weight:700;filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black);font-size:30px}
+.menuClassLevelBox{margin-right:13px;font-size:20px;background:#181818;padding:5px;border-radius:20px}
+#menuClassNameTag>img[src="./img/ranked/rnk_0.svg"]{padding-right:8px;filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black)}
+#menuClassSubtext,#menuClassName,#policeButton{display:none}
+#customizeButton{margin-top:60px;filter:brightness(1) drop-shadow(2px 2px black) drop-shadow(-2px -2px black) drop-shadow(-2px 2px black) drop-shadow(2px -2px black) drop-shadow(4px 4px 0 black);text-align:center;border:none!important;border-radius:50px;width:180px;padding-left:4px;font-size:0px!important;background:#181818}
+#aHolder,#voiceDisplay,#rankedSoonTm,#menuServerInfoContainer{display:none!important}
+#teamScores{position:fixed!important;top:150px;left:25px;background:none}
+.tScoreC{width:14px;height:14px;border-radius:10px;filter:brightness(1) drop-shadow(1px 1px black) drop-shadow(-1px -1px black) drop-shadow(-1px 1px black) drop-shadow(1px -1px black) drop-shadow(2px 2px 0 black)}
+#tScoreV1{color:#eb5656;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important}
+#tScoreV2{color:#fff;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,4px 4px black,3px 3px black,2px 2px black,1px 1px black,0 0 black!important;font-family:'Montserrat',sans-serif!important}
+#menuBtnEsports.menuItemTitle{display:none!important}
+#menuClassIcn{display:none!important}
+#classPreviewCanvas{display:none!important}
+#homeStoreAd,#battlepassAd{display:none!important}
+#mapInfoHld{transform:translateX(90px)}
+#mapInfo{filter:none!important}
+.menuItem .menuItemTitle{display:none}
+#PC7WaterMark2{filter:none!important}
+#curGameInfo{display:none!important}
+#bhHolder{display:none!important}
+#miniMapOverlay{display:none!important}
+#matchInfo{display:none!important}

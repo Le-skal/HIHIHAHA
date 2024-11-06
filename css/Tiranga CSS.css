@@ -1,0 +1,1396 @@
+/* Official Tiranga CSS */
+
+/* Fonts */
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://reizu.moe/fonts/Renogare.ttf);
+}
+
+/* Removals */
+
+#mainLogoFace, #seasonLabel {
+    display: none !important;
+}
+
+#tlInfHold, #streamContainer, #headerRightSocial, #termsInfo, #endAHolder, #aHolder {
+    display: none !important;
+}
+
+#recTimer {
+    display: none;
+}
+
+.button:hover {
+	border: none !important;
+}
+
+.setSugBox2 {
+    display: none;
+}
+
+#settingsPreset {
+    display: none;
+}
+
+.selectorIcon {
+    display: none;
+}
+
+.selectedItem {
+    border: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+.custSubContainer {
+    display: none;
+}
+
+#cmpPartnerImg {
+    display: none;
+}
+
+#ammoMax, #ammoIcon, .weapKey {
+    display: none;
+}
+
+.weapStreakHolder span, .weapStreak {
+    display: none;
+}
+
+.weapStreakHolder {
+    background: transparent !important;
+}
+
+#signedOutHeaderBar .material-icons {
+	display: none !important;
+}
+
+.endTableFlag {
+    margin-left: -25%;
+    margin-top: -3.5%;
+    display: none !important;
+}
+
+#instructionHolder {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+#bottomLeftChallIcon {
+	display: none;
+}
+
+.weapSkin {
+	display: none;
+}
+
+.leaderCounter {
+	display: none;
+}
+
+#timerIcon.topLeftOld {
+	display: none;
+}
+
+#aHolder, #topRightAdHolder {
+    display: none !important;
+}
+
+/* FONT */
+
+@font-face {
+    font-family: happo;
+    src: url(https://reizu.moe/fonts/Renogare.ttf)
+}
+
+/* Base UI */
+
+:root {
+    --uiscale: 0.82; /* 0.82 for 1080p and 0.58 for 768p */
+    --cssname: " Tiranga";
+    --glass-background: rgb(255 255 255 / 25%) !important;
+    --glass-border: /* 3.5px solid rgb(92 87 255 / 0%) */ none !important;
+    --logo-size: scale(1);
+    --text-color: #ffa200;
+    --numX:0.789; /* 0.92 for 1080p and 0.789 for 768p*/
+    --numY:0.68; /* 0.7 for 1080p */
+    --signed-in-bar: scale(1.22); /* 1.195 for 1080p and 1.2 for 768p */
+    --text-transform: none;
+}
+
+#uiBase {
+    height: calc(100%/var(--uiscale)) !important;
+    width: calc(100%/var(--uiscale)) !important;
+    transform: scale(var(--uiscale)) !important;
+}
+
+/* #uiBase { 
+height: calc(100%/var(--numY)) !important;
+width: calc(100%/var(--numX)) !important;
+transform: scaleX(var(--numX)) scaleY(var(--numY)) !important;
+} stretch */
+
+#instructions { font-size: 0px; }
+#instructions:before {
+	content: var(--cssname) !important;
+    font-size: 28px;
+}
+
+#mainLogo {
+    content: url('https://media.discordapp.net/attachments/1008711306481770567/1184027507113066496/indian-flag-3-1024x523.png?ex=66e6868b&is=66e5350b&hm=b3ac50ad530155608f67e0fe23a4ed26b142a651165c6db4e06dc378495ebd34&=&format=webp&quality=lossless');
+    transform: var(--logo-size);
+	filter: saturate(0.9);
+}
+
+.buttonP, .buttonR, .buttonPI, #policeButton, .buttonO, .buttonG {
+    border: var(--glass-border) !important;
+    background-color: var(--glass-background);
+}
+
+.buttonP:hover, .buttonR:hover {
+    background-color: #ff7800 !important;
+}
+
+#inviteButton:hover {
+	background-color: navy;
+}
+
+.buttonPI:hover, #policeButton:hover {
+	background-color: lime;
+}
+
+#headerRight {
+    background-color: var(--glass-background) !important;
+}
+
+#menuItemContainer {
+    background-color: var(--glass-background);
+    border: none !important;
+	display:flex;
+    flex-direction: row;
+    top:unset;
+    bottom:0;
+    width:100%;
+    height:9%;
+}
+
+.menuItem .menuItemTitle {
+    margin-top: -20%;
+    color: #fff;
+    display: none;
+}
+
+.menuItem[onclick$="showWindow(5)"]:hover,
+.menuItem[onclick$="showWindow(14)"]:hover,
+.menuItem[onclick$="windows[32].openHome()"]:hover {
+	background-color: #ff7800 !important;
+}
+
+.menuItem[onclick$="showGames()"]:hover,
+.menuItem[onclick$="showWindow(4)"]:hover,
+.menuItem[onclick$="showWindow(1)"]:hover{
+	background-color: lime !important;
+}
+
+.menBtnIcn {
+    color: white !important;
+}
+
+#referralHeader {
+    background: transparent;
+}
+
+.accBtn {
+    background: transparent;
+}
+
+.headerBar, .headerBarLeft {
+    background-color: rgb(255 255 255 / %);
+}
+
+.instructionsTabs, .instructionsTab {
+    box-shadow: none;
+    background-color: rgb(255 255 255 / 1%);
+    border-top: none !important;
+}
+
+#mapInfoHld {
+    border-bottom: 5px solid #e6e6e6;
+}
+
+#menuClassIcn {
+    border: var(--glass-border) !important;
+    background-color: var(--glass-background);
+}
+
+.headerBar {
+    background-color: transparent !important;
+}
+
+.headerBar,
+#mLevelCont,
+#signedInHeaderBar { border-radius: 0 !important }
+#signedOutHeaderBar.headerBarLeft {
+    width: calc(100% - 162px - 130px);
+    left: 969px; /* 1030px for non-stretch 1080p, 1017px for non-stretch 768p, 884px for stretch 1080p, and 708px for stretch 768p */
+    top: 5%;
+    opacity: 0;
+}
+
+.buttonO {
+	padding-top: 120px !important;
+    width: 400px !important;
+}
+
+#menuFPS {
+	color: var(--text-color) !important;
+}
+
+#headerRight.headerBarRight {
+    background-color: var(--glass-background);
+}
+
+#signedInHeaderBar.headerBarLeft {
+    position: fixed;
+	left: 150px;
+	top: 1.1%;
+	transform: none;
+	text-transform: var(--text-transform);
+}
+
+#mLevelCont {
+    background-color: transparent;
+}
+
+.instructionsHeader {
+	box-shadow: none;
+    border-bottom: none;
+	background-color: #ff7800;
+}
+
+#instructionsUpdate {
+	background-color: #ffffffa0;
+}
+
+[style="color: rgba(255, 255, 255, 0.6);margin-top: 5px;font-size: 28px;"],
+[style="margin-top:10px;font-size:15px;color:rgba(255,255,255,0.4)"] {
+	color: navy !important;
+}
+
+.instructionsTab{
+	color: white;
+	background-color: lime;
+}
+
+/* #menuItemContainer { top: 0 } */
+
+#mapInfo {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+#instructions {
+    animation: none;
+}
+
+#subLogoButtons {
+	text-align: center;
+    bottom: 10%;
+}
+
+#mapInfoHld, #mapInfo {
+    text-align: center;
+}
+
+.pSt, .xpBar, .bigMenTabs, .setBodH {
+    background: transparent;
+}
+
+/* Settings Edit */
+
+#menuWindow.dark {
+    background-color: var(--glass-background);
+}
+
+.settingsHeader {
+    background-color: transparent;
+}
+
+#settingsTabLayout {
+     border: var(--glass-border) !important;
+     background-color: var(--glass-background);
+}
+
+#settHolder .setHed {
+    background: transparent !important;
+    border: transparent !important;
+    display: none;
+}
+
+.settName {
+    color: white !important;
+}
+
+.settingsBtn {
+    border: var(--glass-border) !important;
+    background-color: var(--glass-background);
+}
+
+.settingsHeader .settingsBtn {
+    background-color: transparent  !important;
+    border: none !important;
+}
+
+.settingTab {
+    background-color: var(--glass-background);
+}
+
+#settHolder .setBodH {
+    border: var(--glass-border) !important;
+     background-color: transparent !important;
+}
+
+.settName, .settNameSmall, .setHed #hostActionH, .mFeatSepar{
+    border: hidden!important;
+    background: transparent !important;
+}
+
+.setHed {
+	background: transparent;
+	border: none;
+}
+
+input:checked+.advancedSlider, input:checked+.slider {
+	background-color: #ff7800;
+}
+
+.sliderM {
+	border-radius: 0;
+}
+
+[style="color: #eb5656"] {
+	color: lime !important;
+}
+
+input[type=color] {
+	border: none;
+}
+
+/* Loadout Select */
+
+.custContainer {
+    background: transparent;
+    border: var(--glass-border);
+}
+
+#itemSearchH {
+    background: transparent;
+}
+
+#selectorContainer {
+    background-color: rgb(255 255 255 / 1%);
+    color: #fff !important;
+}
+
+.selectorLabel {
+    text-shadow: none;
+    padding-bottom: 39px;
+}
+
+.blackShad {
+    text-shadow: none;
+    color: #fff !important;
+}
+
+.chalRight {
+    color: #fff !important;
+}
+
+.classCard {
+    text-shadow: none !important;
+    box-shadow: none !important;
+    background: transparent;
+    border: var(--glass-border) !important;
+    width: 380px;
+}
+
+.lockedClass {
+    background-color: rgb(0 0 0 / 25%);
+}
+
+.lockedClass .material-icons {
+    margin-left: 130px;
+}
+
+.setHed:hover {
+	background: transparent;
+}
+
+/* spectate button */
+
+#uiBase.onMenu #spectButton {
+	position: fixed;
+	left: 40px;
+	bottom: 45%;
+	transform: none;
+	text-transform: var(--text-transform);
+}
+
+#spectButton span {
+    font-size: 20px !important;
+}
+
+.sliderSml:before {
+    content: none;
+}
+
+.sliderSml {
+    background: white;
+    border-radius: 0px;
+}
+
+.switchsml {
+    width: 40px;
+    height: 25px;
+}
+
+#spectButton :not(.switchsml) {
+    color: var(--text-color) !important;
+}
+
+input:checked+.sliderSml {
+    background-color: lime !important;
+}
+
+/* Chat UI */
+
+#chatList::-webkit-scrollbar, #chatSwitch:after{
+   display:none;
+}
+
+#chatInputHolder, #chatList {
+    background: var(--glass-background) !important;
+   border: none;
+}
+
+#chatInput {
+   margin-left: -45%;
+    background: transparent;
+    border: none;
+}
+
+.chatItem, #chatList {
+    text-align: left;
+}
+
+[style*="color:#fc03ec"] {
+    color: #0000d2 !important;
+    text-shadow: none;
+}
+
+.greyInner, .greyInlineInner {
+    background-color: var(--glass-background);
+}
+
+#chatSwitchHolder {
+	display: none;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 30px;
+    bottom: 142px;
+}
+
+[style="color:#eb5656"] {
+	color: var(--text-color) !important;
+}
+
+[style="color:#9eeb56"] {
+    color: #57e557 !important;
+}
+
+.greyInlineInner, .greyInlineInnerMid {
+	background-color: transparent;
+}
+
+/* Customize Edit */
+
+#menuClassContainer {
+    bottom: 18px;
+}
+
+#customizeButton {
+    bottom: 150px;
+    opacity: 0;
+    height: 270px;
+    width: 360px;
+    right: 70px;
+}
+
+#classPreviewCanvas {
+    transition: opacity .2s ease-in;
+    margin-bottom: -320px;
+    margin-right: -113px;
+}
+
+[style="display:inline-block;position:relative"], #menuClassIcn {
+    top: 200px;
+}
+
+#menuClassSubtext {
+	color: #0000d2;
+	text-shadow: none;
+}
+
+#menuClassName {
+	color: var(--text-color);
+}
+
+/* kill death streak on the right */
+
+.topRightCounters {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto !important;
+    transform: translateY(-50%);
+}
+
+.statIcon {
+    border: var(--glass-border) !important;
+    background-color: var(--glass-background);
+}
+
+/* In-Game UI */
+
+#reloadMsg {
+    padding-left:unset;
+    padding-right:unset;
+    line-height:unset;
+    bottom: 42%;
+    font-size:15px;
+    background:transparent;
+    border:none;
+    color:#0000d2;
+}
+
+/* Leaderboard Edit */
+
+.leaderNameM {
+    color: var(--text-color) !important;
+	font-family: happo;
+	font-size: 21px;
+}
+
+.leaderNameM span {
+    color: #0000d2 !important;
+}
+
+.leaderScore {
+	font-family: happo;
+}
+
+/* Health Edit */
+
+#bottomLeftPlayer, #bottomLeftPlayerRight  {
+	background-color: transparent;
+}
+
+#bottomLeftTeamName,
+#bottomLeftTeamType {
+	display: none;
+}
+
+#bottomLeftHolder, #bottomLeftPlayerLeft {
+	background: transparent !important;
+}
+
+#bottomLeftHealth {
+    background-color: transparent;
+    width: 100px;
+    height: 85px;
+    border-radius: 10px;
+    position: fixed;
+    left: 4.3%;
+    bottom: 1.3%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+#bottomLeftHealth {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+    will-change: unset;
+}
+
+#bottomLeftHealthBar {
+    background: 0px rgba(0,0,0,.2);
+    column-gap: 0px;
+    padding: 0;
+     outline: 1px solid #00000030;
+    filter: drop-shadow(2px 2px var(--black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+}
+
+.nHpBSeg {
+    border-radius: 0px;
+}
+
+.nHealthBarSeg {
+    background: 0;
+    margin-left: -1px;
+    height: 50px;
+    min-width: 60px;
+}
+
+#bottomLeftPlayerMid {
+    position: fixed;
+    right: calc(80% - 110px);
+    top: 93.4%;
+}
+
+/* Ammo Edit */
+
+#ammoHolder {
+	width: 50px;
+	height: 5px;
+	top: calc(50% + 35px);
+	left: calc(50% - 25px);
+}
+
+.greyInner {
+	background-color: transparent;
+}
+
+#ammoVal {
+	position: fixed;
+	font-size: 70px;
+	right: 34px;
+	bottom: 25px;
+	font-family: hpammo;
+}
+
+#ammoHolder {
+    position: fixed;
+    background-color: transparent;
+    background-image: url(https://dummyimage.com/1x1/000000/000000.png);
+    transform: none;
+    width: 50px;
+    height: 4px;
+    top: calc(50% + 28px);
+    left: calc(50% - 28px);
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+.weapKey {
+    display: none;
+}
+
+/* Weapon edit */
+
+.weapItem, .weapItemInner {
+    background-color: transparent;
+}
+
+#bottomRight, #weapHolder {
+    position: unset;
+	background: transparent;
+}
+
+#weapHolder:not([style*=none]) {
+    display: flex !important;
+}
+
+.weapItem {
+    position:fixed;
+    left:50%;
+    bottom:25px;
+    opacity:0 !important;
+    transform:translateX(-50%) translateY(100px);
+    transition:transform 0.25s,opacity 0.7s;
+	filter: drop-shadow(2px 2px #af4100c9) drop-shadow(-2px -2px #af4100c9) drop-shadow(-2px 2px #af4100c9) drop-shadow(2px -2px #af4100c9);
+}
+
+.weapItem[style*="opacity: 1"] {
+    opacity:1 !important;
+    transform:translateX(-50%) translateY(0);
+    transition:transform 0.25s,opacity 0.7s;
+}
+
+.weapKey, .weapSkin {
+    display: none;
+}
+
+#bottomLeftClassImg {
+    height: 70px;
+    width: 70px;
+	margin-top: 10%;
+}
+
+#leaderDisplay {
+    background-color: var(--glass-background) !important;
+}
+
+#pingIcon {
+    display:none;
+}
+
+/* #fpsDisplay {
+    visibility:hidden;
+} */
+
+#ingameFPS {
+    visibility:visible;
+}
+
+#ingameFPS {
+    color: var(--text-color) !important;
+}
+
+#pingText {
+	color: lime;
+}
+
+#healthValueHolder {
+    display: none;
+}
+
+#timerIcon {
+    display: none;
+}
+
+#timerVal {
+    background: transparent;
+	font-size: 24px;
+}
+
+#ingressDisplay, #ingressPacketCount, #ingressDataSize, #ingressIcon {
+    display: none !important;
+}
+
+#ammoDisplay {
+    border: var(--glass-border) !important;
+}
+
+#topMidHold {
+    transform: unset;
+    z-index: 20;
+    top: 10px;
+    text-shadow: var(--hud-text-shadow);
+}
+
+#roundsDisplay {
+    background-color: transparent;
+    transform: unset;
+    will-change: auto;
+    margin: 0;
+}
+
+.roundScrV {
+    background-color: transparent;
+    line-height: unset;
+    height: unset;
+    color: #fff;
+    text-shadow: var(--hud-text-shadow);
+    position: fixed;
+    top: 120px;
+    border: none !important;
+    font-size: 24px;
+}
+
+#roundTSc1 {
+    right: calc(47% + 144px);
+	top: 5%;
+	font-size: 50px;
+	color: #ff7800;
+	display: none;
+}
+
+#roundTSc2 {
+    left: calc(47% + 144px);
+	top: 5%;
+	font-size: 50px;
+	color: lime;
+	display: none;
+}
+
+#roundTSc1~div:not(.roundScrV) {
+    margin: 0 !important;
+}
+
+#roundsVal {
+    position: fixed;
+    right: 50%;
+    bottom: 1200px;
+    transform: translateX(50%);
+}
+
+#roundSub {
+    font-size: 20px;
+    position: fixed;
+    right: 50%;
+    bottom: 1160px;
+    transform: translateX(50%);
+}
+
+#gameMessage {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Comp UI */
+
+.cmpTmHed {
+    text-shadow: none;
+}
+
+.compMenBtnS {
+    background-color: var(--glass-background) !important;
+    border: none;
+    margin-top: 40px !important;
+}
+
+.compSwpTmB {
+    background-color: var(--glass-background) !important;
+    border: var(--glass-border) !important;
+}
+
+#compTimBox {
+    bottom: unset;
+    top: 1055px;
+}
+
+.compClassPItm {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.compTScrB {
+    background-color: transparent !important;
+}
+
+.compTScrB {
+    background-color: transparent !important;
+    text-shadow: none;
+}
+
+#compT1Scr {
+    color: #ff7800 !important;
+}
+
+[style="color:#fff;text-shadow:none"] {
+    color: #ffffff !important;
+}
+
+#compT2Scr {
+    color: lime !important;
+}
+
+#compClassPHolder {
+    background-color: transparent;
+    padding: 0;
+    top: 38px;
+}
+
+#compInfBox {
+    right: 52px;
+    top: 48px;
+}
+
+.cmpClassLck {
+    top: 20px;
+}
+
+#cmpDatBox {
+    border-radius: 0;
+    border-color: var(--accent);
+    font-size: 44px;
+    display: none;
+}
+
+#cmpStatBarH {
+    border-radius: 0;
+    padding: 0;
+    margin-top: 8px;
+}
+
+#cmpStatBarP {
+    border-radius: 0;
+    background-image: none;
+    background-color: var(--accent);
+}
+
+#compTScrsB {
+    position: absolute;
+    width: 100%;
+    top: 230px;
+    text-align: center;
+    transform: scale(0.9);
+}
+
+#cmpStatBarP {
+    border-radius: 0;
+    background-image: none;
+    background-color: var(--accent);
+}
+
+#compPlListL .compSwpTmB:hover {
+    background-color: #ff7800 !important;
+}
+
+#compPlListR .compSwpTmB:hover {
+    background-color: lime !important;
+}
+
+#compPlListL .cmpTmHed {
+	color: #ff7800;
+}
+
+#compPlListR .cmpTmHed {
+	color: lime;
+}
+
+.compMenBtnS[onclick$="showWindow(3)"]:hover,
+.compMenBtnS[onclick$="showWindow(1)"]:hover,
+#cmpSpectBtn:hover {
+	background-color: #ff7800 !important;
+}
+
+.compMenBtnS[onclick$="showWindow(5)"]:hover,
+.compMenBtnS[onclick$="copyInviteLink(1)"]:hover,
+.compMenBtnS[onclick$="openJoinWindow(!1,1)"]:hover{
+	background-color: lime !important;
+}
+
+#compTimBox {
+    bottom: unset;
+    top: 1055px;
+}
+
+/* End Scoreboard */
+
+#returnHolder {
+   background-color: var(--glass-background) !important;
+   border: var(--glass-border) !important;
+}
+
+.endCard {
+    padding: 0px;
+    background-color: var(--glass-background) !important;
+    border: var(--glass-border) !important;
+}
+
+#endTabbedView {
+    padding-top: 0px;
+    min-width: 1400px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#endInfo {
+    padding-top: 20px;
+}
+
+.teamTotals {
+    background-color: var(--glass-background) !important;
+    border: var(--glass-border) !important;
+    filter: saturate(1.5);
+}
+
+.endTablePfp, .endTableFlag {
+    display: none;
+}
+
+#tabHolder {
+    background: transparent;
+}
+
+#endTable {
+    background: transparent;
+}
+
+#compBtnLst {
+    background: transparent;
+}
+
+.compMenBtnS {
+    background-color: var(--glass-background) !important;
+    border: var(--glass-border) !important;
+}
+
+.teamTotalN0 {
+	color: var(--text-color)
+}
+
+.teamTotalN1 {
+	color: lime;
+}
+
+#matchVoteHolder {
+    top: 220px;
+}
+
+#endTimer {
+    color: #0000d2;
+    font-size: 26px;
+    margin-top: 170px;
+	text-shadow: none;
+}
+
+.crStat, #kdLayout, .endSection, .gfSection {
+    background: transparent !important;
+    border: none;
+}
+
+/* Host Game edit */
+
+.serverHeader, #stickyHostH {
+    background: transparent !important;
+}
+
+#menuWindow .serverHeader .setBodH {
+    border: none !important;
+}
+
+/* team selector edit 
+
+.sliderCent {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a8a8a800;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 34px;
+    pointer-events: all
+}
+
+.sliderCent:before {
+    position: absolute;
+    content: '\2192';
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    left: 5px;
+    bottom: 0px;
+    background-color: transparent!Important;
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 50%;
+    transform: rotateZ(180deg) translateY(-4px) scale(1.5);
+}
+
+input:checked+.sliderCent:before {
+    -webkit-transform: translateX(3px) translateY(-6px) scale(1.5);
+    -ms-transform: translateX(3px) translateY(-6px) scale(1.5);
+    transform: translateX(3px) translateY(-12px) scale(1.5);
+    background-color: transparent !Important
+}
+
+#teamSelector {
+	bottom: 300px;
+} */
+
+/* death ui */
+
+.death-ui-holder,
+.death-ui-bottom,
+.death-ui-bottom-empty,
+.death-column,
+.death-row-center,.death-row-center-bottom,.death-row-center-self,
+.death-row-center-bottom,
+.death-row-left,.death-row-right,.death-row-bottom,
+.death-row-right,
+.death-row-bottom,
+.death-row-bottom-bg,
+.death-row-weapon,
+.death-row-weapon-text,
+.death-row-weapon-img,
+.death-row-weapon-img-right,
+.death-row-kills,
+.death-row-user,
+.death-row-user-text,.death-row-user-stat,
+.death-row-user-stat,
+.death-row-class,
+.death-row-class-level,
+.death-row-class-img,
+.death-report,
+.death-report-text,
+.death-stats,
+.death-stats-row, .death-column-empty {
+    display: none !important;
+}
+
+#leaderboardHolder {
+    background-color: var(--glass-background);
+}
+
+div#playerListH {
+    background: var(--glass-background) !important;
+}
+
+/* Black and White Animation */
+
+@keyframes blackwhite{
+    0%{
+        color:#333333;
+    }
+    50%
+    {
+        color:#fff;
+    }
+
+    100%{
+        color:#3d3d3d;
+    }
+}
+
+/* Timer edit */
+
+#timerHolder.topLeftOld, #timerInner.topLeftOld {
+    background-color: transparent;
+}
+
+#timerVal.topLeftOld {
+	font-size: 40px !important;
+}
+
+#matchInfo.topLeftOld::after {
+    content: var(--cssname);
+    font-size: 20px;
+}
+
+#matchInfo.topLeftOld [style="color:rgba(255,255,255,0.6)"] { color: black !important; font-size: 0px; padding: 5px; }
+#matchInfo { color: var(--text-color); margin-left: 12px;  }
+
+/* Death UI */
+
+.death-row-kills, .death-row-weapon-text {
+    font-size: 0px;
+}
+
+.death-ui-bottom {
+    backdrop-filter: none;
+    animation: none;
+    background: transparent;
+}
+
+.death-stats {
+    display: none;
+}
+
+/* Changes to Sliders */
+
+.sliderM::-webkit-slider-thumb {
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 10px var(--text-color)!important;
+}
+
+.sliderM {
+	height: 9px!important;
+	border-radius: 50px !important;
+	background-color: var(--glass-background);
+}
+.sliderVal {
+	background-color: var(--glass-background)
+}
+
+/* HeaderbarLeft */
+
+.headerBarLeft {
+    background-color: rgb(0, 0, 0, 0);
+    position: absolute;
+    padding-bottom: 10px;
+}
+
+#menuAccountUsername {
+    font-size: 30px;
+	font-family: hpammo !important;
+    color: var(--text-color);
+}
+
+[style="color:#fbc02d"] {
+		font-size: 15px !important;
+}
+
+.krInfo {
+    position: fixed;
+    top: 63px;
+    left: 20px;
+	font-family: hpammo !important;
+}
+
+#menuKRCount {
+    font-size: 20px;
+	position: relative!important;
+	top: 8px;
+	font-family: hpammo !important;
+}
+
+#menuKRCount:before {
+    content: 'Wealth: ';
+    color: #fff;
+	font-size: 20px;
+	font-family: hpammo !important;
+}
+
+.mailUnread {
+    border: 2px solid var(--text-color) !important;
+}
+
+.unreadBtnM {
+    background-color: var(--text-color);
+}
+
+#menuMiniProfilePic {
+    width: 30px;
+    height: 30px;
+	margin-top: 5.5px !important;
+}
+
+#menuUsernameContainer {
+    left: 20px;
+    position: fixed;
+    top: 9px;
+}
+
+.progressBarInner {
+    display: none;
+}
+
+#mailCount {
+    background: #fff0;
+    text-shadow: none;
+    font-size: 20px;
+    width: max-content;
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    z-index: -1;
+    display: block!important;
+	border: none !important;
+	font-family: hpammo !important;
+}
+
+#mailCount::before {
+    content: 'You have ';
+	font-size: 20px;
+	font-family: hpammo !important;
+}
+
+#mailCount::after {
+    content: ' unread mails';
+	font-size: 20px;
+	font-family: hpammo !important;
+}
+
+#mailIcon {
+    position: fixed;
+    top: 60px;
+    left: 110.5px;
+    opacity: 0;
+	border: none !important;
+	font-family: hpammo !important;
+}
+
+#mailIcon:hover {
+    opacity: 0;
+    transform: none;
+	font-family: hpammo !important;
+}
+
+#mLevelCont {
+    margin-left: 290px !important;
+	font-family: hpammo !important;
+}
+
+.krSocial {
+	display: none;
+}
+
+.junkInfo {
+    position: fixed;
+    top: 125px;
+    left: 18px;
+	font-family: hpammo !important;
+}
+
+#menuJNKCount {
+    font-size: 20px;
+	position: relative!important;
+	top: 2px;
+	font-family: hpammo !important;
+}
+
+#menuJNKCount:before {
+    content: 'Junk: ';
+    color: #fff;
+	font-size: 20px;
+	font-family: hpammo !important;
+}
+
+.verticalSeparator {
+	display: none;
+}
+
+#mLevelCont {
+    position: fixed;
+    top: 105px;
+    left: -12.2%;
+	font-family: hpammo !important;
+}
+
+#mLevelContV {
+    font-size: 20px;
+	position: relative!important;
+	font-family: hpammo !important;
+}
+
+#mLevelContV:before {
+    content: 'Level: ';
+    color: #fff;
+	font-size: 20px;
+	font-family: hpammo !important;
+}
+
+#teamScores {
+    background: #ff000000;
+	margin-top: 30px;
+}
+
+.tScore {
+	display: flex;
+	align-items: center;
+}

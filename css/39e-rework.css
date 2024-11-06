@@ -1,0 +1,26 @@
+/* 39e css reworked */
+/* css made by jitchu */
+/* Credits to reizu for making the original and some of the menu code */
+/* last updated: 30/08/2023 */
+/* futher info about the css feel free to contact me */
+/* discord: jitchu */
+/* twitter: JitchuFPS */
+
+@import url(https://jitchudev.github.io/jitchu-css/39e-reworked.css);
+
+
+/* feel free to mess around with these colors */
+:root{
+    --ammo-color: #fff;
+    --health-color: #fff;
+    --ping-fps-text-color: #fff;
+    --ping-fps-number-color: #fff;
+    --enemy-team-color: #bdbdbdbc;
+    --friendly-team-color: #cfbfffa5;
+    --friendly-color:  #cfbfff;
+    --enemy-color:  #bdbdbd;
+    --timer-color:  #fff;
+    --streak-color:  #fff;
+    --menu-icons-color: #fff;
+    
+}
