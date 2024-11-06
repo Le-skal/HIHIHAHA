@@ -1,10 +1,671 @@
+:root{
+    --pic: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/omori1.jpg?raw=true);
+    --bgpic: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/omori2.gif?raw=true);
+}
+
+/* last updated: 26/08/2023 */
 /* css made by jitchu */
 /* discord: jitchu */
 /* twitter: JitchuFPS */
 /* futher info about the css feel free to contact me */
-@import url(https://jitchudev.github.io/jitchu-css/regret.css);
 
-:root{
-    --pic: url(https://cdn.discordapp.com/attachments/865988103977828412/1122834732795838556/5477eac537ae12a07db1ebb4ce76d5a7.jpg);
-    --bgpic: url(https://cdn.discordapp.com/attachments/865988103977828412/1127335752099971092/anime-male.gif);
+@font-face {
+    font-family: gamefont;
+    src: url(https://reizu.moe/fonts/Renogare.ttf);
+}
+
+#uiBase:not([class]) #instructionsUpdateBG,
+#uiBase:not([class]) #instructionHolder,
+#uiBase:not([class]) #loadingBg1,
+#uiBase:not([class]) #loadingBg {
+    background-image: var(--bgpic) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    z-index: 99999999;
+}
+
+
+ /* quik fix gray boxes removed by jitchu */
+
+#leaderboardHolder {
+    background-color: rgb(20 20 20 / 0%);
+}
+
+#leaderContainer {
+    background-color: rgb(108 108 108 / 0%);
+}
+
+.greyInner, .greyInlineInner {
+    background-color: rgb(108 108 108 / 0%);
+   
+}
+
+#bottomLeftPlayerRight {
+    background-color: rgb(108 108 108 / 0%);
+    margin-top: 40px;
+}
+
+.statIcon {
+    font-size: 20px;
+    color: rgba(255,255,255,.6);
+    text-shadow: 1.5px 1.5px black;
+    background-color: rgb(20 20 20 / 0%);
+    display: none;
+}
+
+#killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
+    color: rgb(255 255 255);
+}
+
+#bottomLeftPlayer {
+    background-color: rgb(20 20 20 / 0%);
+   
+}
+
+#bottomLeftPlayerLeft {
+    background-color: rgb(108 108 108 / 0%);
+    
+}
+
+#bottomLeftTeamName {
+    color: #fff;
+    background-color: rgb(108 108 108 / 0%);
+   
+}
+
+#bottomLeftTeamType {
+    background-color: rgb(108 108 108 / 0%);
+}
+
+#bottomLeftHealthBar {
+    background-color: rgb(108 108 108 / 0%);
+    margin-top: 41px !important;
+}
+
+
+
+
+#ammoHolder {
+    background-color: rgb(20 20 20 / 0%);
+   
+}
+
+#ammoMax {
+    color: rgb(255 255 255);
+}
+
+.weapItem {
+    color: #fff;
+    background-color: rgb(20 20 20 / 0%);
+}
+
+.weapItemInner {
+    color: rgba(255,255,255,.7);
+    background-color: rgb(108 108 108 / 0%);
+}
+
+
+.weapSkin {
+    background-color: rgb(20 20 20 / 0%);
+    color: #ffffffcf;
+    display: none;
+}
+
+.weapKey {
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    background-color: rgb(0 0 0 / 0%);
+    display: none;
+}
+
+
+#chatList {
+    background-color: rgb(0 0 0 / 0%);
+}
+
+#chatInputHolder {
+    background-color: rgb(20 20 20 / 0%);
+}
+
+
+#chatInput {
+    background-color: rgb(0 0 0 / 0%);
+    border: 2px solid rgb(0 0 0 / 0%);
+    border-bottom: 3px solid black;
+}
+.weapStreakHolder {
+    background-color: rgb(20 20 20 / 0%);
+    color: #fff;
+}
+
+.weapStreakInner {
+    color: rgb(255 255 255);
+    background-color: rgb(108 108 108 / 0%);
+
+}
+
+.killStreakItem {
+    background-color: rgb(20 20 20 / 0%);
+}
+
+
+#aHolder {
+    display: none;
+}
+
+#mainLogo, #mainLogoFace {
+    display: none;
+}
+
+#seasonLabel {
+    display: none;
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+#bottomLeftChallIcon {
+    display: none;
+}
+
+
+
+#bottomLeftClassImg ,#menuMiniProfilePic,#profilePicM {
+  content: var(--pic)
+}
+
+#voiceIcon {
+    display: none;
+}
+
+#recTimer {
+    display: none;
+}
+
+#chatSwitchHolder {
+    display: none;
+}
+
+#ammoVal {
+    text-shadow: 3px 3px #000000;
+}
+
+#ammoVal:after {
+    content: " 弾薬";
+}
+
+#bottomLeftTeamHolder {
+    display: none;
+}
+
+#bottomLeftHealth {
+    color: #fff;
+    font-size: 20px;
+    will-change: transform;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 60px;
+    padding-right: 7px;
+    padding-left: 10px;
+    font-size: 22px;
+    will-change: transform;
+    display: inline-block;
+    left: 100px;
+    text-shadow: 3px 3px #000000;
+}
+
+#bottomLeftHealth:after {
+    content: " 健康";
+}
+
+.nHealthBarSeg {
+    height: 30px !important;
+}
+
+
+#timerInner.topLeftOld {
+    background-color: rgb(108 108 108 / 0%) !important;
+}
+
+#timerHolder.topLeftOld {
+    background-color: rgb(0 0 0 / 0%) !important;
+    position: relative;
+    right: 20px;
+}
+
+#timerIcon.topLeftOld {
+    display: none !important;
+}
+
+#PC7WaterMark1 {
+    display: none !important;
+}
+
+#matchInfo.topLeftOld {
+    font-size: 0px!important;
+}
+
+#matchInfo.topLeftOld:after {
+    content: "後悔";
+    font-size: 20px;
+    text-shadow: 3px 3px #000000;
+}
+
+.chatMsg[style*="color:#fc03ec"] {
+    background-image: linear-gradient(90deg, #ffffff, #ffffff);
+    text-shadow: 1px 1px #000000;
+   background-size: 100%;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+  }
+
+.chatMsg [style="color:#eb5656"] {
+    color: #ffffff !important;
+    text-shadow: 1px 1px #000000;
+}
+
+.chatMsg [style="color:#9eeb56"] {
+    color: #FFFFFF !important;
+    text-shadow: 1px 1px #000000;
+
+}
+
+#pingDisplay, #fpsDisplay, #ingressDisplay, #egressDisplay, #tickDisplay {
+    color: rgb(255 255 255);
+    text-shadow: 3px 3px #000000;
+}
+
+#pingText [style="color:#eb5656"] {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 3px 3px #000000;
+}
+
+#ingameFPS {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 3px 3px #000000;
+}
+
+span#ingameFPS {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 3px 3px #000000;
+}
+
+span#pingText {
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 3px 3px #000000;
+}
+
+.leaderCounter {
+    display: none !important;
+}
+
+
+.leaderScore {
+    color: rgb(255 255 255)!important;
+}
+
+.leaderName {
+    color: black;
+    text-shadow: 1.5px 1.5px white;
+
+}
+.leaderCounter, .leaderScore {
+    color: rgb(255,255,255) !important;
+    opacity: 1;
+}
+.leaderNameF {
+    color: rgba(255,255,255);
+}
+
+ .leaderName span {
+text-shadow: 0px 0px white;
+}
+
+.leaderItem {
+    font-size: 23px;
+    text-shadow: 1.5px 1.5px black;
+}
+
+img#streakIcon {
+    display: none;
+}
+
+img#kdIcon {
+    display: none;
+}
+
+img#deathsIcon {
+    display: none;
+}
+
+img#killsIcon {
+    display: none;
+}
+
+span#killsVal:after {
+    content: " K";
+}
+
+span#deathsVal:after {
+    content: " D";
+}
+
+span#streakVal:after {
+    content: " S";
+}
+.topRightCounters {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    left: 30px;
+}
+
+#nukeCounter {
+    background-color: rgb(20 20 20 / 0%) !important;
+    text-shadow: 3px 3px black !important;
+}
+
+#timerInner.topLeftOld {
+    background-color: rgb(108 108 108 / 0%) !important;
+    text-shadow: 3px 3px #000000;
+}
+
+/* Menu ui */
+
+img#editorBtnM {
+    display: none;
+}
+
+.menuSocialB {
+    display: none;
+}
+
+.verticalSeparator {
+    height: 0;
+}
+
+#homeStoreAd {
+    display: none;
+}
+
+div#newUserGuide {
+    display: none;
+}
+
+.youNewDiv {
+    display: none;
+}
+
+div#updateAdIcon {
+    display: none;
+}
+
+#krDiscountAd {
+    display: none;
+}
+
+#menuItemContainer {
+    background: rgb(0 0 0) !important;
+}
+
+.headerBar {
+    background-color: rgb(0 0 0) !important;
+}
+
+div#NewAltManager {
+    display: none !important;
+}
+
+#signedInHeaderBar {
+    width: 100% !important
+    ;
+}
+
+.youNewDiv {
+    display: none !important;
+}
+
+.material-icons-outlined {
+    color: white !important;
+}
+
+div#PC7WaterMark2 {
+    display: none !important;
+}
+
+.button {
+    background-color: rgb(0 0 0) !important;
+}
+
+.buttonP, .buttonR, .buttonPI, .buttonG {
+    border: 4px solid #ffffff!important;
+}
+
+#policeButton {
+    border: 4px solid #ffffff!important;
+}
+
+
+#mapInfoHld {
+    border-bottom: 5px solid #ffffff;
+
+}
+
+#menuClassIcn {
+    display: none;
+}
+
+#termsInfo {
+    display: none;
+}
+
+#streamContainer {
+    display: none;
+}
+
+#signedOutHeaderBar {
+    width: 100% !important;
+}
+
+#menuServerInfoContainer {
+    display: flex;
+    width: 30vw;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center !important;
+}
+
+div#menuPingDisplay:after {
+    content: "ジッチュ";
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+#menuRegionLabel {
+    margin-right: 20px;
+}
+span#spectButton {
+    display: none !important;
+}
+
+#menuWindow.dark {
+    background-color: #000000;
+}
+
+.settingsHeader {
+    background-color: #000;
+}
+
+.settingsBtn {
+    background-color: #000000;
+}
+
+.settingsBtn {
+    background-color: #000000 !important;
+}
+
+input:checked+.slider {
+    background-color: #515354;
+}
+
+.setHed {
+    border: 4px solid rgb(255 255 255 / 90%);
+    background-color: rgb(0 0 0);
+    color: #fff;
+}
+
+#aHolder {
+    display: none !important;
+}
+
+#selectorContainer {
+    background-color: #000000;
+}
+
+
+.loadoutBtn {
+    background-color: #000000;
+}
+
+.winSelH {
+    background: #000000;
+}
+
+
+.winClose {
+    background: #000000;
+}
+
+.custBack {
+    background: #00000082;
+}
+
+.skinCard {
+    background-color: rgb(0 0 0 / 46%);
+}
+
+
+.classCard {
+    background-color: #000000;
+}
+
+
+.premiumSkinCol {
+    color: #ffffff!important;
+}
+
+div#menuFPSDisplay {
+    color: white !important;
+}
+
+span#menuFPS {
+    color: white !important;
+}
+
+.buttonO {
+    border: 4px solid #ffffff!important;
+}
+
+#teamScores {
+    background-color: rgb(0 0 0 / 0%);
+}
+
+div#endAHolderL {
+    display: none !important;
+}
+
+div#endAHolderR {
+    display: none !important;
+}
+
+#doubleXPHolder {
+    border: 6px solid #ffffff;
+}
+
+.greyInlineInnerMid {
+    background-color: transparent !important;
+}
+
+#bottomLeftClassImg {
+    border-radius: 5px !important;
+}
+
+#topRightAdHolder {
+    display: none !important;
+}
+
+/* shop item text test */
+#bundlePop, #premiumPop {
+    pointer-events: all;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1035px;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    box-shadow: 2px 2px 8px rgb(255 255 255 / 82%);
+    background-color: #000000;
+    border: solid white 2px;
+}
+
+.bundlPopBuyC {
+    background: #000000!important;
+    border: solid white 2px;
+}
+
+#bundlCreatorCodeBtn {
+    background-color: white !important;
+    color: black;
+}
+
+
+.bundleItmBtn {
+    background: #000000;
+    border: solid white 2px;
+}
+
+.bundleCrd {
+    background: #000000;
+    border: solid white 2px;
+}
+
+span.material-icons {
+    color: white !important;
+}
+
+.vouchPop {
+    background-color: #000000;
+    border: solid white 3px;
+}
+
+div#genericPop div {
+    color: white !important;
+}
+
+#redVouch {
+    width: 379px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: black;
+    border: solid white 2px;
+}
+
+.redVouchBtn {
+    background-color: #000000;
+    border: solid white 2px;
+    color: #000 !important;
 }
