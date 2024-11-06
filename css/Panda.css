@@ -12,7 +12,7 @@
 :root {
   --Name:"🐼㊗";
   --waterMark:"香港 🕊️";
-  --gif: url(https://cdn.discordapp.com/attachments/1214681883984527410/1231664128381423757/19884312_1007450012724498_8345367932877777421_n_by_najimlg_dbgwlor-350t.png?ex=6708bd5b&is=67076bdb&hm=d7e4ed79514688fc8f0ec7f939d3ecd45eb95f80fb575da666e7ffaadc101c3b&);
+  --gif: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/Panda_rect.png?raw=true);
   --width: 160px;
   --weapcolor: rgb(0, 0, 0);
   --ingame-bg: #0000004a;
@@ -440,7 +440,7 @@
       color: #000 !important;
   }
   #loadingBg{
-    background-image: url(https://cdn.discordapp.com/attachments/1066716767285682229/1067161902792327379/1247647.jpg?ex=66767b38&is=667529b8&hm=29780d672381ecb0265666b43a1035f43e4dd40529d175f0b3d4f293a23103f1&) !important;
+    background-image: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/pnl.jpg?raw=true) !important;
     z-index: 5 !important;
   }
 
