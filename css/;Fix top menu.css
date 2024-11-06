@@ -6,7 +6,7 @@
     --trans: transparent;
     --link: #ffffff;
     --uiscale: .8;
-    --profile: url(https://cdn.discordapp.com/attachments/779918191929327639/932856568972734494/anime.jpg?ex=6727a721&is=672655a1&hm=3b7fbb320b922684b5a159b79439961b2c8359797644a1a6c42ba0cf8bb83c5c&);
+    --profile: url(https://cdn.discordapp.com/attachments/779918191929327639/932856568972734494/anime.jpg?ex=672c4461&is=672af2e1&hm=bcd628bb7bd7025e6e88b3649f1d16671d523fcd92a1d702c98af8f5f4765e89&);
 }
 * {
     font-family: 'Shizuru', cursive;
@@ -1987,7 +1987,7 @@ input[type=color] {
     letter-spacing: 0px;
     transform: translate(50%, 0);
     height: initial;
-    background-image: url(https://cdn.discordapp.com/attachments/779918191929327639/947768690802315304/pink.png);
+    background-image: url(https://cdn.discordapp.com/attachments/779918191929327639/947768690802315304/pink.png?ex=672c76e0&is=672b2560&hm=7f359bad4522cebae72f466b485c56f620cc6615d9b5ea577088a6ca9dfa4677&);
     font-size: 0;
 }
 
