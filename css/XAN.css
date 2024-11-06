@@ -32,7 +32,7 @@
 }
 
 #bottomLeftClassImg {
-    content: url(https://cdn.discordapp.com/attachments/1255579787544625162/1260691820308860988/7ca2d5af2599c96f5b69669840e9c0c4.png?ex=672c7800&is=672b2680&hm=5f7761ddb5a445b8d7981d52653b6ebbccf4073a817e5b99dd39b679a4fac300&);
+    content: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/smoke.png?raw=true);
     visibility: visible !important;
 	border-radius: 10px;
 }
@@ -42,14 +42,14 @@
     font-size:18px !important;
     visibility: visible !important;
     color:white !important;
-	background: url(https://cdn.discordapp.com/attachments/1010041471551938624/1194757717894643814/whitesparkle.gif?ex=672be255&is=672a90d5&hm=f6fe19a21380c24a24596125c9bca7f45878b53624b48a36338022b90cd7749d&) !important;
+	background: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/whitesparkle.gif?raw=true) !important;
 }
 .leaderNameM::after {
     visibility:visible !important;
     content: var(--Clan) !important;
     font-size:18px !important;
     color: #000000;
-	background: url(https://cdn.discordapp.com/attachments/1010041471551938624/1194794836369346640/bluesparkle.gif?ex=672c04e7&is=672ab367&hm=21d1db7909a56d192a95d93db9f110a16a92e155d56c70f68f521c4a3ec0b1cd&) !important;
+	background: url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/bluesparkle.gif?raw=true) !important;
 }
 
 .leaderNameM,.leaderNameM span {
