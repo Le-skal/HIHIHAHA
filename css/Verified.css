@@ -12,8 +12,7 @@
 
 
 
-/* NAME */
-
+/* NAME MENU */
 #menuAccountUsername { 
     font-size: 0 
 }
@@ -25,7 +24,8 @@
     color:white !important;
     visibility: visible !important;
 }
- 
+
+/* NAME END TABLE */
 .endTableN[style="color:#fff"]{
     font-size: 0px;
 }
@@ -36,6 +36,7 @@
     vertical-align: top;
 }
 
+/* NAME LEADER BOARD */
 .leaderNameM {
     font-size: 0px;
 }
@@ -46,6 +47,8 @@
     vertical-align: top;
     color: #ffffff;
 }
+
+/* CLAN LEADER BOARD */
 .leaderNameM span {
     font-size: 18px;
     background-image: linear-gradient(to top, var(--colorClanLb), var(--colorClanLb)) !important;
@@ -53,16 +56,17 @@
     color: transparent !important;
     -webkit-background-clip: text;
 }
+
+/* BADGES AS IMAGE AND VERIFIED */
 .leaderNameM:before,
 .endTableN[style="color:#fff"]:before {
     font-family : 'Material Icons';
     font-size : 30px;
     display : inline-block;
-    content : url(https://cdn.discordapp.com/attachments/1255534552345219263/1304574375135023114/badgee.png?ex=672fe310&is=672e9190&hm=f110a3eb8915de6b06d710f1a6371898141fb7554daece080ab89dc12deb2922&) url(https://cdn.discordapp.com/attachments/1255534552345219263/1304569709802426540/image.png?ex=672fdeb8&is=672e8d38&hm=ad80009ceee672fbfda45bf26b385a2b4642c303dfeb63f44fae7e8e8b7709a8&) "check_circle " !important;
+    content : url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/purple%20flame.png?raw=true) url(https://github.com/Le-skal/HIHIHAHA/blob/main/img/red%20nuke.png?raw=true) "check_circle " !important;
     color : #40C4FF !important;
     vertical-align:TOP;
     margin-left: -15px;
     visibility: visible !important;
     transform: scale(0.8);
 }
-
