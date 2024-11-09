@@ -1,0 +1,170 @@
+/* Made by NukeMarvin */
+
+:root {
+--div-grey: transparent;
+--div-black: rgba(0,0,0,0.25);
+}
+
+* {
+    border: transparent !important;
+    text-shadow: none !important;
+}
+
+.endTableN[style*="#fff"],
+#menuAccountUsername,
+.leaderNameM,
+.newLeaderNameM {
+    filter: drop-shadow(1px 1px black) drop-shadow(-1px -1px black) drop-shadow(-1px 1px black) drop-shadow(1px -1px black); !important;
+}
+
+.leaderNameM span,
+.newLeaderNameM span,
+.endTableN[style*="#fff"] span {
+    color: (add stroke) outline, make white w black outline
+}
+
+#streamContainer,
+#mainLogoFace,
+#seasonLabel,
+#homeStoreAd,
+.weapSkin,
+#menuClassIcn,
+.setSugBox2,
+.bigMFeatHold,
+#menuClassSubtext,
+#menuClassName,
+.carousel,
+#hostCMapPickr,
+#voiceIcon,
+#recTimer,
+#ammoIcon,
+#ammoMax,
+#bottomLeftPlayerRight,
+#bottomLeftTeamHolder,
+#chatSwitchHolder,
+.greyInlineInner,
+#leaderContainer .material-icons,
+#leaderContainer img,
+.newLeaderItem .material-icons,
+.newLeaderItem img,
+#endTable .material-icons,
+#endTable img,
+.menuItem .menuItemTitle,
+.headerBarRight,
+.sliderSml:before,
+.slider:before,
+.weapStreakHolder,
+.endTableFlag,
+#bubbleContainer {
+    display: none !important;
+}
+
+.greyInlineInnerMid {
+    margin: 0px;
+}
+
+.verticalSeparator,
+.endTablePfp,
+.death-stats,
+#roundsDisplay {
+   visibility: hidden;
+}
+
+.weapItem,
+.weapKey,
+.nHealthBarSeg,
+#bottomLeftHealthBar,
+.death-ui-bottom {
+    background-color: transparent !important;
+}
+
+.weapItem,
+#ammoHolder {
+    transform: scale(1.2) translateX(-5%);
+}
+
+.weapKey:before {
+    content: "["
+}
+
+.weapKey:after {
+    content: "]"
+}
+
+#leaderboardHolder,
+#timerHolder.topLeftOld,
+#chatInputHolder,
+#chatInput,
+#chatList,
+#bottomLeftClassImg,
+#bottomLeftHealth,
+#bottomLeftPlayer {
+    border-radius: 6px;
+}
+
+#chatInputHolder {
+    width: 375px;
+}
+
+#chatInput {
+    width: 365px;
+}
+
+#chatList {
+    margin-bottom: 2%;
+}
+
+#uiBase.onGame #chatHolder {
+    bottom: 140px;
+}
+
+.nHealthBarSeg {
+    height: 50px;
+    margin: 0px -8px;
+}
+
+#bottomLeftHealthBar {
+    column-gap: 0px;
+    padding: 0px;
+}
+
+.nHpBSeg {
+    border-radius: 10px;
+}
+
+#bottomLeftPlayer {
+    width: 375px;
+    grid-template-columns: 105px 250px auto;
+}
+
+#bottomLeftPlayerLeft {
+    margin: 0px;
+}
+
+#matchInfo.topLeftOld {
+    font-size: 0px !important;
+}
+
+#matchInfo.topLeftOld:before {
+    font-size: 32px !important;
+    content: "🏆";
+}
+
+#mainLogo {
+    content: url(https://i.imgur.com/IlhNo9d.png);
+    width: 700px;
+    height: 100px;
+}
+
+#uiBase.onMenu #spectButton span {
+    font-size: 0px !important;
+}
+
+.switchsml {
+    width: 100px;
+    height: 25px;
+}
+
+.death-ui-bottom {
+    backdrop-filter: none;
+}
