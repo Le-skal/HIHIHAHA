@@ -103,7 +103,8 @@ font-size: 26px;
   vertical-align: top!important;
   width: unset!important;
   background-color: rgb(20 20 20 / 0%);
-  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30);
+  /* filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important; */
 }
 
 #timerInner.topLeftOld {
@@ -145,7 +146,8 @@ font-size: 0px!important;
   font-size: 35px;
   color: rgb(255, 255, 255);
   font-weight: 900;
-  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color));
+  text-shadow: 2px 4px 6px rgb(30, 30, 30);
+  /* filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)); */
 }
 
 #loadingBg{
@@ -222,7 +224,8 @@ text-shadow: 2px 4px 6px rgb(30, 30, 30) !important;
   bottom: 60px;
   left: 140px;
   font-size: 35px;
-  filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color));
+  text-shadow: 2px 4px 6px rgb(30, 30, 30);
+  /* filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color)); */
 }
 
 
@@ -247,7 +250,8 @@ text-shadow: 2px 4px 6px rgb(30, 30, 30) !important;
 #instructions:after {
   font-size: 32px;
   color: white;
-  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color));
+  text-shadow: 2px 4px 6px rgb(30, 30, 30);
+  /* filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)); */
   content: var(--information);
   animation: grow .8s infinite alternate
 }
@@ -638,7 +642,8 @@ img#editorBtnM {
   display: inline-block;
   margin-left: 10px;
   font-size: 70px !important;
-  filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color));
+  text-shadow: 2px 4px 6px rgb(30, 30, 30);
+  /* filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color)); */
 }
 
 #ammoMax {
@@ -664,7 +669,7 @@ content: var(--Name);
 font-family: name;
 color: #ffffff;
 position: sticky;
-filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color));
+/* filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color)); */
 }
 
 .leaderNameM span {
@@ -674,7 +679,7 @@ filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-co
  background-size: 400% 100%;
  color: transparent !important;
  -webkit-background-clip: text;
- filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color));
+ /* filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color)); */
 }
 
 .leaderName {
@@ -724,11 +729,13 @@ background-color: var(--ingame-bg);
 #menuFPSDisplay, #menuFPS, #menuPingDisplay, #menuPingText {
   font-size: 12px !important;
   color: #ffffff !important;
-  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30);
+  /* filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important; */
 }
 #menuPingIcon, #menuRegionLabel, #spectButton [style="font-size:15px;color:rgba(255,255,255,.6)"], #fpsDisplay, #pingDisplay, #menuTimer {
   color: #ffffff !important;
-  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30);
+  /* filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important; */
 }
 #ingameFPS, #pingText{
   color:white !important;
