@@ -139,15 +139,15 @@ font-size: 26px;
 font-size: 0px!important;
 }
 #matchInfo.topLeftOld:after {
+  position: fixed;
+  top: 11%;
   content: var(--WaterMark);
   font-size: 35px;
   color: rgb(255, 255, 255);
   font-weight: 900;
   filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color));
 }
-#teamScores {
-  margin-top: 10px;
-}
+
 #loadingBg{
   background-image: var(--bgimg) !important;
   width:105%;
@@ -735,13 +735,18 @@ background-color: var(--ingame-bg);
 }
 #fpsDisplay {
   position: fixed !important;
-  top: 23% !important;
+  top: 17% !important;
   left: 1%;
 }  
 #pingDisplay {
   position: fixed !important;
-  top: 26% !important;
+  top: 19.5% !important;
   left: 1%;
+}
+
+#teamScores {
+  position: fixed;
+  top: 22% !important;
 }
 
 
