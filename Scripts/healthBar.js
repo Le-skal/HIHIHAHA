@@ -38,7 +38,7 @@
         healthFill.style.height = "100%";
         healthFill.style.width = "100%";
         healthFill.style.backgroundColor = "#00000000";
-        // healthFill.style.backgroundColor = "#FF0000FF";
+        // healthFill.style.backgroundColor = "#00FF00FF";
         healthFill.style.transition = "width 0.3s ease-out";
 
         healthBar.appendChild(healthFill);
