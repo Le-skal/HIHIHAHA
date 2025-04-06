@@ -64,7 +64,7 @@
             const holderBGSize = getComputedStyle(ammoHolder).backgroundSize;
             const bgSizeX = parseFloat(holderBGSize.split(" ")[0]) || 0;
         
-            if (currentAmmoText === "-" || bgSizeX > 0) {
+            if (bgSizeX > 0) {
                 const reloadProgress = (100 - bgSizeX) / 100;
                 const extraFill = (100 - ammoPercentage) * reloadProgress;
                 const newFill = ammoPercentage + extraFill;
@@ -79,7 +79,7 @@
         }               
 
         // Update Ammo Bar Continuously
-        setInterval(updateAmmoBar, 10);
+        setInterval(updateAmmoBar, 100);
     }
 
     waitForUI();
