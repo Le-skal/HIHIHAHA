@@ -69,7 +69,7 @@
                 const extraFill = (100 - ammoPercentage) * reloadProgress;
                 const newFill = ammoPercentage + extraFill;
             
-                ammoFill.style.transition = "width 0.05s linear";
+                ammoFill.style.transition = "width 0.1s linear";
                 ammoFill.style.width = `${newFill}%`;
             } else {
                 // Normal case, update with current ammo
