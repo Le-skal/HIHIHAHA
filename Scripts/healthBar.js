@@ -27,7 +27,8 @@
         healthBar.style.transform = "translateX(-50%)";
         healthBar.style.width = "200px";
         healthBar.style.height = "10px";
-        healthBar.style.backgroundColor = "#222";
+        healthBar.style.backgroundColor = "#00000000";
+        // healthBar.style.backgroundColor = "#FF0000FF";
         healthBar.style.borderRadius = "5px";
         healthBar.style.overflow = "hidden";
         healthBar.style.zIndex = "9999";
@@ -36,7 +37,8 @@
         healthFill.id = "healthFill";
         healthFill.style.height = "100%";
         healthFill.style.width = "100%";
-        healthFill.style.backgroundColor = "#00FF00";
+        healthFill.style.backgroundColor = "#00000000";
+        // healthFill.style.backgroundColor = "#FF0000FF";
         healthFill.style.transition = "width 0.3s ease-out";
 
         healthBar.appendChild(healthFill);
