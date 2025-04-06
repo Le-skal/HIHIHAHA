@@ -42,6 +42,25 @@
         healthBar.appendChild(healthFill);
         uiBase.appendChild(healthBar);
 
+        const classHealth = {
+            "Triggerman": 100,
+            "Hunter": 60,
+            "Run N Gun": 100,
+            "Spray N Pray": 180,
+            "Vince": 90,
+            "Detective": 100,
+            "Marksman": 90,
+            "Rocketeer": 130,
+            "Agent": 110,
+            "Runner": 120,
+            "Deagler": 60,
+            "Bowman": 100,
+            "Commando": 100,
+            "Trooper": 100,
+            "Survivor": 150,
+            "Infiltrator": 90,
+        };
+
         function updateHealthBar() {
             let healthElement = document.getElementById("bottomLeftHealth");
             if (!healthElement) return;
@@ -49,22 +68,16 @@
             let currentHealth = parseInt(healthElement.innerText.trim());
             if (isNaN(currentHealth)) return;
 
-            let maxHealth = 100; // Default max HP
-            let healthPercentage = Math.max(0, Math.min(100, (currentHealth / maxHealth) * 100));
-            healthFill.style.width = healthPercentage + "%";
+            let classElement = document.getElementById("menuClassName");
+            let playerClass = classElement ? classElement.innerText.trim() : "";
+            let maxHealth = classHealth[playerClass] || 100; 
 
-            // Optional color change
-            if (healthPercentage > 60) {
-                healthFill.style.backgroundColor = "#00FF00";
-            } else if (healthPercentage > 30) {
-                healthFill.style.backgroundColor = "#FFA500";
-            } else {
-                healthFill.style.backgroundColor = "#FF0000";
-            }
+            let healthPercentage = Math.max(0, Math.min(100, (currentHealth / maxHealth) * 100)); 
+            healthFill.style.width = healthPercentage + "%"; 
         }
 
-        setInterval(updateHealthBar, 50);
+        setInterval(updateHealthBar, 0.1);
     }
 
-    waitForUI();
+    waitForUI(); 
 })();
