@@ -51,26 +51,32 @@
         }
 
         function updateAmmoBar() {
-            let ammoElement = document.getElementById("ammoVal");
-            let maxAmmoElement = document.getElementById("ammoMax");
-
-            if (!ammoElement || !maxAmmoElement) return;
-
-            let currentAmmoText = ammoElement.innerText.trim();
-            let maxAmmo = cleanAmmoMax(maxAmmoElement.innerText);
-
-            let ammoPercentage;
-
-            if (currentAmmoText === "-") {
-                // Reloading state
-                ammoPercentage = 100;
+            const ammoElement = document.getElementById("ammoVal");
+            const maxAmmoElement = document.getElementById("ammoMax");
+            const ammoHolder = document.getElementById("ammoHolder");
+        
+            if (!ammoElement || !maxAmmoElement || !ammoHolder) return;
+        
+            const currentAmmoText = ammoElement.innerText.trim();
+            const maxAmmo = cleanAmmoMax(maxAmmoElement.innerText);
+            const currentAmmo = parseInt(currentAmmoText) || 0;
+            const ammoPercentage = (currentAmmo / maxAmmo) * 100;
+            const holderBGSize = getComputedStyle(ammoHolder).backgroundSize;
+            const bgSizeX = parseFloat(holderBGSize.split(" ")[0]) || 0;
+        
+            if (currentAmmoText === "-" || bgSizeX > 0) {
+                const reloadProgress = (100 - bgSizeX) / 100;
+                const extraFill = (100 - ammoPercentage) * reloadProgress;
+                const newFill = ammoPercentage + extraFill;
+            
+                ammoFill.style.transition = "width 0.05s linear";
+                ammoFill.style.width = `${newFill}%`;
             } else {
-                let currentAmmo = parseInt(currentAmmoText) || 0;
-                ammoPercentage = (currentAmmo / maxAmmo) * 100;
+                // Normal case, update with current ammo
+                ammoFill.style.transition = "width 0.1s ease-out";
+                ammoFill.style.width = `${ammoPercentage}%`;
             }
-
-            ammoFill.style.width = ammoPercentage + "%";
-        }
+        }               
 
         // Update Ammo Bar Continuously
         setInterval(updateAmmoBar, 10);
