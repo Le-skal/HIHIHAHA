@@ -31,7 +31,6 @@
         // healthBar.style.backgroundColor = "#FF0000FF";
         healthBar.style.borderRadius = "5px";
         healthBar.style.overflow = "hidden";
-        healthBar.style.zIndex = "9999";
 
         let healthFill = document.createElement("div");
         healthFill.id = "healthFill";
